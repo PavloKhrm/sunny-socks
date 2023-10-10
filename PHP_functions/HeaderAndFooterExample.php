@@ -7,12 +7,12 @@
 </head>
 <body>
     <?php
-        require_once("/PHP_functions/header.php");
+        require_once("header.php");
 
     ?>
     <h1>content</h1>
     <?php
-        require_once("/PHP_functions/footer.php");
+        require_once("footer.php");
     ?>
 </body>
 </html>
