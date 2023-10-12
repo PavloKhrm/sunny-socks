@@ -1,0 +1,62 @@
+/* styles.css */
+body {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.contact-info {
+    flex: 1; /* Займет 33% ширины */
+    background-color: white;
+    padding: 40px;
+    border-radius: 5px;
+     /* Центрирует текст */
+    color: #1E407A; /* Цвет текста */
+    font-family: "Arial", sans-serif; /* Устанавливает шрифт Arial или, если его нет, использует общий шрифт sans-serif */
+    margin: 20px; /* Добавляет отступ */
+    border: 9px solid #FECD3E;
+    min-height: 10%;
+    max-height: max-content;  /* Устанавливает минимальную высоту для блока, например, 100% */
+}
+.contact-info-p{
+text-align: center;
+color: #1E407A;
+}
+
+.contact-form {
+    
+    flex: 2; /* Займет 66% ширины */
+    background-color: white;
+    padding: 40px;
+    border-radius: 5px;
+    margin: 20px;
+    color: #1E407A;/* Цвет текста */
+    border: 9px solid #FECD3E;
+    font-family: "Arial", sans-serif; /* Устанавливает шрифт Arial или, если его нет, использует общий шрифт sans-serif */
+    max-height: fit-content; 
+}
+
+form {
+    margin-top: 20px;
+}
+
+input, textarea {
+    width: 100%; /* Занимает всю доступную ширину */
+    padding: 10px;
+    margin-bottom: 7px;
+    border: 3px solid #FECD3E;
+    border-radius: 0px;
+    color: #333; /* Цвет текста */
+    font-size: 16px; /* Размер шрифта */
+    background-color: lightyellow;
+}
+
+button {
+    background-color: #FECD3E;
+    color: #1E407A;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
