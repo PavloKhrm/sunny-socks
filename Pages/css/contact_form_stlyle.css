@@ -1,57 +1,64 @@
-/* styles.css */
-body {
-    /* display: flex; */
-    width: 100%;
-    margin: 0;
+body { 
+    margin: 0 auto;
     height: 100vh;
+    grid-gap: 20px; 
 }
-
-.contact-info {
-    flex: 1; /* Займет 33% ширины */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  margin: 10px;
+  padding: 0px;  
+  padding-left: 100px;
+  justify-content: center; /* Выравниваем контейнер по центру по горизонтали */
+  align-items: center; 
+  }
+  
+  .contact-info {
+    grid-column: 1; 
     background-color: white;
-    padding: 40px;
+    padding: 10px;
     border-radius: 5px;
-     /* Центрирует текст */
-    color: #1E407A; /* Цвет текста */
-    font-family: "Arial", sans-serif; /* Устанавливает шрифт Arial или, если его нет, использует общий шрифт sans-serif */
-    margin: 20px; /* Добавляет отступ */
-    border: 9px solid #FECD3E;
-    min-height: 10%;
-    max-height: max-content;  /* Устанавливает минимальную высоту для блока, например, 100% */
-}
-.contact-info-p{
-text-align: center;
-color: #1E407A;
-}
-
-.contact-form {
+    color: #1E407A;
+    font-size: 18px; 
     
-    flex: 2; /* Займет 66% ширины */
-    background-color: white;
-    padding: 40px;
-    border-radius: 5px;
-    margin: 20px;
-    color: #1E407A;/* Цвет текста */
+    font-family: "Arial", sans-serif;
     border: 9px solid #FECD3E;
-    font-family: "Arial", sans-serif; /* Устанавливает шрифт Arial или, если его нет, использует общий шрифт sans-serif */
-    max-height: fit-content; 
+    max-width: 250px;
+  }
+  
+  .contact-info-p {
+    text-align: center;
+    color: #1E407A;
 }
+  
+  .contact-form {
+    grid-column: 2; 
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    color: #1E407A;
+    border: 9px solid #FECD3E;
+    font-family: "Arial", sans-serif;
+    max-width: 650px;
+    margin-left: -300px;
+  }
 
-form {
-    margin-top: 20px;
-}
-
-input, textarea {
-    width: 100%; /* Занимает всю доступную ширину */
+  input, textarea {
+    width: 90%;
     padding: 10px;
     margin-bottom: 7px;
     border: 3px solid #FECD3E;
-    border-radius: 0px;
-    color: #333; /* Цвет текста */
-    font-size: 16px; /* Размер шрифта */
+    border-radius: 0;
+    color: #333;
+    font-size: 16px;
     background-color: lightyellow;
 }
-
+label {
+    font-size: 20px; 
+    text-decoration: underline;
+  }
+ 
 button {
     background-color: #FECD3E;
     color: #1E407A;
@@ -59,4 +66,12 @@ button {
     border: none;
     border-radius: 100px;
     cursor: pointer;
+}
+
+.email, .email2, .phone, .phone2{
+    text-decoration: underline;
+}
+
+.email, .phone{
+     font-weight: bold;
 }
