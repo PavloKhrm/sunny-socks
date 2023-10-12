@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/contact_form_stlyle.css">
     <title>Контакты</title>
 </head>
 <body>
 <?php
-        require_once("header.php");
-
+         require_once("../PHP_functions/header.php");
     ?>
    
         <div class="contact-info">
@@ -18,11 +17,11 @@
             <p>Phone: </p> 
             <p>+31 672 391 1332</p>
             <p>
-                <img src="images/facebook-logo.png" alt="Facebook" width="32" height="32">
+                <img src="../src/images_contact_form//facebook-logo.png" alt="Facebook" width="32" height="32">
                 <a href="https://www.facebook.com/yourpage">Sunny.Socks</a>
             </p>
             <p>
-                <img src="images/instagram-logo.png" alt="Instagram" width="32" height="32">
+                <img src="../src/images_contact_form/instagram-logo.png" alt="Instagram" width="32" height="32">
                 <a href="https://www.instagram.com/yourpage">Sunny.Socks</a>   
             </p>
             <br>
@@ -47,7 +46,7 @@
             </form>
         </div>
         <?php
-        require_once("footer.php");
+        require_once("../PHP_functions/footer.php");
     ?>
 </body>
 </html>

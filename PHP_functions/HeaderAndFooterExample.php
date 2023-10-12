@@ -6,9 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <p>xd</p>
-    <h1>hqd</h1>
+    <?php
+        require_once("header.php");
+
+    ?>
+    <h1>content</h1>
+    <?php
+        require_once("footer.php");
+    ?>
 </body>
 </html>
-
-<!-- git add . git commit -m "" git push -->
