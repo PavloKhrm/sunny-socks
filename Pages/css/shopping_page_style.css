@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "Nexa Bold";
+    src: url("../../src/fonts/Nexa\ Bold.otf");
+}
+
+@font-face {
+    font-family: "Nexa Light";
+    src: url("../../src/fonts/Nexa\ Light.otf");
+}
+
+body{
+    font-family: "Nexa Light", Sans-serif;
+    margin: 0;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    min-height: 71dvh;
+}
+
+p{
+    font-size: 3dvh;
+    margin: 0;
+}
+
+img{
+    height: 10dvh;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.column_left{
+    grid-column: 2/3;
+}
+
+.column_right{
+    grid-column: 3/4;
+}
+
+h1{
+    font-size: 6dvh;
+    color: #f15b39;
+}
+
+h2{
+    font-size: 4dvh;
+    margin-bottom: 0;
+}
+
+.product{
+    height: 45dvh;
+}
+
+#price{
+    margin-top: 0;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.illustration{
+    height: 8dvh;
+}
+
+.no_top_margin{
+    margin-top: 0;
+}
