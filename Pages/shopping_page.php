@@ -27,22 +27,36 @@
         <div class="item column_right">
             <h1 class="no_top_margin">Choose the style</h1>
             <div class="flex">
-                <div class="item">
-                    <img src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_uni_red.png" alt="Unicolor Sock">
-                    <p>uni color</p>
+                <div class="item"><input type="radio" name="style" id="uni-color" checked><label for="uni-color" class="item">
+                        <img src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_uni_red.png"
+                            alt="Unicolor Sock">
+                        <p>uni color</p>
+                    </label>
                 </div>
-                <div class="item"><img src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_stripes_red.png"
-                        alt="Striped Sock">
-                    <p>stripes</p>
+                <div class="item"><input type="radio" name="style" id="striped"><label for="striped"
+                        class="item"><img src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_stripes_red.png"
+                            alt="Striped Sock">
+                        <p>stripes</p>
+                    </label>
                 </div>
             </div>
             <h1>Choose the color</h1>
             <div class="flex">
-                <img src="../src/sunny_illustrations/png/sunny_socks_Orange.png" alt="Red Illustration" class="illustration">
-                <img src="../src/sunny_illustrations/png/sunny_socks_Pink.png" alt="Red Illustration" class="illustration">
-                <img src="../src/sunny_illustrations/png/sunny_socks_Yellow.png" alt="Red Illustration" class="illustration">
-                <img src="../src/sunny_illustrations/png/sunny_socks_Green.png" alt="Red Illustration" class="illustration">
-                <img src="../src/sunny_illustrations/png/sunny_socks_Blue.png" alt="Red Illustration" class="illustration">
+                <input type="radio" name="color" id="colorOrange" checked><label for="colorOrange"><img
+                        src="../src/sunny_illustrations/png/sunny_socks_Orange.png" alt="Orange Illustration"
+                        class="illustration"></label>
+                <input type="radio" name="color" id="colorPink"><label for="colorPink"><img
+                        src="../src/sunny_illustrations/png/sunny_socks_Pink.png" alt="Pink Illustration"
+                        class="illustration"></label>
+                <input type="radio" name="color" id="colorYellow"><label for="colorYellow"><img
+                        src="../src/sunny_illustrations/png/sunny_socks_Yellow.png" alt="Yellow Illustration"
+                        class="illustration"></label>
+                <input type="radio" name="color" id="colorGreen"><label for="colorGreen"><img
+                        src="../src/sunny_illustrations/png/sunny_socks_Green.png" alt="Green Illustration"
+                        class="illustration"></label>
+                <input type="radio" name="color" id="colorBlue"><label for="colorBlue"><img
+                        src="../src/sunny_illustrations/png/sunny_socks_Blue.png" alt="Blue Illustration"
+                        class="illustration"></label>
             </div>
         </div>
 

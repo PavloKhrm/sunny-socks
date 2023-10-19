@@ -74,3 +74,17 @@ h2{
 .no_top_margin{
     margin-top: 0;
 }
+
+input[type="radio"]{
+    display: none;
+
+    &:checked + label{
+        border: solid thin black;
+    }
+}
+
+
+label{
+    cursor: pointer;
+    border: solid thin transparent;
+}
