@@ -12,8 +12,8 @@
     <?php
     require_once("../PHP_functions/header.php");
     ?>
-    <form action="./shopping_page.php" method="post">
-        <main>
+    <main>
+        <form action="./shopping_page.php" method="post">
             <div class="item column_left">
                 <h2>100% cotton</h2>
                 <img src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_uni_red.png" alt="Sock"
@@ -28,50 +28,35 @@
             <div class="item column_right">
                 <h1 class="no_top_margin">Choose the style</h1>
                 <div class="flex">
-                    <div class="item">
-                        <input type="radio" name="style" id="uni-color" value="uni-color" onclick="this.form.submit()">
-                        <label for="uni-color" class="item">
-                            <img src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_uni_red.png" alt="Unicolor Sock">
-                            <p>uni color</p>
-                        </label>
-                    </div>
-                    <div class="item">
-                        <input type="radio" name="style" id="striped" value="striped" onclick="this.form.submit()">
-                        <label for="striped" class="item">
-                            <img src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_stripes_red.png" alt="Striped Sock">
-                            <p>stripes</p>
-                        </label>
-                    </div>
+
+                    <?php
+                    $styles = ["uni", "stripes"];
+                    foreach ($styles as $style) {
+                        echo '<div class="item">
+                                    <input type="radio" name="style" id="' . $style . '" value="' . $style . '" onclick="this.form.submit()">
+                                    <label for="' . $style . '" class="item">
+                                        <img src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_' . $style . '_red.png" alt="'.$style.' Sock">
+                                        <p>' . $style . '</p>
+                                    </label>
+                                </div>';
+                    }
+                    ?>
                 </div>
                 <h1>Choose the color</h1>
                 <div class="flex">
-                    <input type="radio" name="color" id="colorOrange" value="orange" onclick="this.form.submit()">
-                    <label for="colorOrange">
-                        <img src="../src/sunny_illustrations/png/sunny_socks_Orange.png" alt="Orange Illustration" class="illustration">
-                    </label>
-                    <input type="radio" name="color" id="colorPink" value="pink" onclick="this.form.submit()">
-                        <label for="colorPink">
-                            <img src="../src/sunny_illustrations/png/sunny_socks_Pink.png" alt="Pink Illustration" class="illustration">
-                        </label>
-                    <input type="radio" name="color" id="colorYellow" value="yellow" onclick="this.form.submit()">
-                    <label for="colorYellow">
-                        <img src="../src/sunny_illustrations/png/sunny_socks_Yellow.png" alt="Yellow Illustration" class="illustration">
-                    </label>
-                    <input type="radio" name="color" id="colorGreen" value="green" onclick="this.form.submit()">
-                    <label for="colorGreen">
-                        <img src="../src/sunny_illustrations/png/sunny_socks_Green.png" alt="Green Illustration" class="illustration">
-                    </label>
-                    <input type="radio" name="color" id="colorBlue" value="blue" onclick="this.form.submit()">
-                    <label for="colorBlue">
-                        <img src="../src/sunny_illustrations/png/sunny_socks_Blue.png" alt="Blue Illustration" class="illustration">
-                    </label>
-
-
+                    <?php
+                    $colors = ["orange", "pink", "yellow", "green", "blue"];
+                    foreach ($colors as $color) {
+                        echo '<input type="radio" name="color" id="color' . $color . '" value="' . $color . '" onclick="this.form.submit()">
+                                <label for="color' . $color . '">
+                                    <img src="../src/sunny_illustrations/png/sunny_socks_' . $color . '.png" alt="' . $color . ' Illustration" class="illustration">
+                                </label>';
+                    }
+                    ?>
                 </div>
             </div>
-        </main>
-    </form>
-
+        </form>
+    </main>
     <?php
     require_once("../PHP_functions/footer.php")
         ?>
