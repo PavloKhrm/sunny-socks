@@ -44,11 +44,12 @@
                 <h1>Choose the color</h1>
                 <div class="flex">
                     <?php
-                    $colors = ["orange", "pink", "yellow", "green", "blue"];
+                    $colors = ["Orange", "Pink", "Yellow", "Green", "Blue"];
                     foreach ($colors as $color) {
                         echo '<input type="radio" name="color" id="color' . $color . '" value="' . $color . '" onclick="this.form.submit()">
                                 <label for="color' . $color . '">
-                                    <img src="../src/sunny_illustrations/png/sunny_socks_' . $color . '.png" alt="' . $color . ' Illustration" class="illustration">
+                                    <img src="../src/sunny_illustrations/png/Sunny_socks_' . $color . '.png" alt="' . $color . ' Illustration" class="illustration">
+                                    
                                 </label>';
                     }
                     ?>
