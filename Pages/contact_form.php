@@ -1,3 +1,4 @@
+<?php require_once("../PHP_functions/footerAndHeader.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,8 +8,8 @@
     <title>Контакты</title>
 </head>
 <body>
-    <?php require_once("../PHP_functions/header.php"); ?>
-
+  
+    <?php insertHeader("Contact us"); ?>
     <div class="container">
         <div class="contact-info">
             <h1>Need help?</h1>
@@ -48,6 +49,6 @@
         </div>
     </div>
 
-    <?php require_once("../PHP_functions/footer.php"); ?>
+    <?php  insertFooter();?>
 </body>
 </html>

@@ -1,3 +1,4 @@
+<?php require_once("../PHP_functions/footerAndHeader.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,9 +10,7 @@
 </head>
 
 <body>
-    <?php
-    require_once("../PHP_functions/header.php");
-    ?>
+    <?php insertHeader("Shopping");?>
     <main>
         <form action="./shopping_page.php" method="post">
             <div class="item column_left">
@@ -57,9 +56,7 @@
             </div>
         </form>
     </main>
-    <?php
-    require_once("../PHP_functions/footer.php")
-        ?>
+    <?php insertFooter(); ?>
 </body>
 
 </html>

@@ -1,4 +1,5 @@
 <?php
+//stylesheet
 function insertHeaderAndFooterStyle() {
         echo "<style>
         body {
@@ -38,16 +39,22 @@ function insertHeaderAndFooterStyle() {
         }
     </style>";
     }
-    function insertHeader() {
+    //header div
+    function insertHeader($pageName) {
         echo '
         <div class="header">
-            <div class="about">About us</div>
+            <div class="about">' .$pageName. '</div>
             <div class="logo"> <img class="logo-img" src="../src/Logo/png/sunny_logos_slogan_yellow.png" alt="Sunny_logo"></div>    
         </div>';
     }
 
 
-insertHeaderAndFooterStyle();
+insertHeaderAndFooterStyle(); // insert style automatically after requiring
+?>
 
-insertHeader();
+<?php
+//footer insertion
+function insertFooter() {
+        echo '<div class="footer">footer</div>';
+}
 ?>

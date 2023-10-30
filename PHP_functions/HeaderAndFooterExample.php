@@ -1,3 +1,6 @@
+<?php
+        require_once("./footerAndHeader.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,12 +10,11 @@
 </head>
 <body>
     <?php
-        require_once("header.php");
-
+    insertHeader("Your page");
     ?>
     <h1>content</h1>
     <?php
-        require_once("footer.php");
+    insertFooter();
     ?>
 </body>
 </html>
