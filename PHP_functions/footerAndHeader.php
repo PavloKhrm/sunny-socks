@@ -11,7 +11,7 @@ function insertHeaderAndFooterStyle() {
         
         .header {
             background-color: #1E407A;
-            min-height: 18dvh;
+            min-height: 17dvh;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -33,9 +33,21 @@ function insertHeaderAndFooterStyle() {
             max-width:400px;
         }
         .footer {
+            display:flex;
             background-color: #FECD3E;
             min-height: 11dvh;
             margin-top: auto;
+        }
+        .footer-logo{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            height:100%;
+            width:20%;
+        }
+        .footer-image-logo{
+            margin-top:20px;
+            width:250px;
         }
     </style>";
     }
@@ -55,6 +67,11 @@ insertHeaderAndFooterStyle(); // insert style automatically after requiring
 <?php
 //footer insertion
 function insertFooter() {
-        echo '<div class="footer">footer</div>';
+        echo '
+        <div class="footer">
+            <div class="footer-logo"><img class="footer-image-logo" src="../src/Logo/png/sunny_logos_white.png" alt="logo"></div>
+            <div class= "footer-navigation"></div>
+            <div class="footer-icons"></div>
+        </div>';
 }
 ?>

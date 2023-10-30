@@ -1,5 +1,5 @@
 <?php
-        require_once("./footerAndHeader.php");
+        require_once("./footerAndHeader.php"); // first, you import functions  from this php file
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,11 +10,11 @@
 </head>
 <body>
     <?php
-    insertHeader("Your page");
+    insertHeader("Your page"); // then, on top of the page, you insert header and write your page name inside. For example, for "Contact us" page, write "Contact us" inside. Make sure it is written in string
     ?>
     <h1>content</h1>
     <?php
-    insertFooter();
+    insertFooter(); // insert footer in the end of your page(after the content) 
     ?>
 </body>
 </html>
