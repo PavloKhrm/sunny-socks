@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./css//about_page_style.css" type="text/css">
 </head>
 <body>
+    <!--- Id for where the "go back" button takes the user --->
+    <div id="goBack"></div>
     <?php insertHeader("About Us"); ?>
     <div class="about_info">
         <div class="branding">
@@ -45,6 +47,8 @@
                 Sunny is, in a consistent way, a visual branding is developed</h3>
         </div>
         <div class="vision_img"></div>
+        <!--- Button to send user back to the top of the page --->
+        <a href="#goBack">go back</a>
     </div>
     <?php insertFooter(); ?>
 </body>
