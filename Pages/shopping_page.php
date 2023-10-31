@@ -1,25 +1,9 @@
 <?php require_once("../PHP_functions/footerAndHeader.php"); ?>
 <?php 
-    $currentColor = isset($_COOKIE["_color"]) ? $_COOKIE["_color"] : "Red";
-    $currentStyle = isset($_COOKIE["_style"]) ? $_COOKIE["_style"] : "uni";
-    if (!empty($_POST["colorSock"])) {
-        setcookie ("_color", $_POST['colorSock']);
-    }
+if (!empty($_POST)) {
+    $currentColor = strtolower($_POST["colorSock"]); // gets a color from user
+} else $currentColor = "red"; // default color
 
-    if (!empty($_POST["style"])) {
-        setcookie ("_style", $_POST['style']);
-    } 
-
-
-    
-    
-
-    $currentColor = isset($_COOKIE["_color"]) ? $_COOKIE["_color"] : "Red";
-    $currentStyle = isset($_COOKIE["_style"]) ? $_COOKIE["_style"] : "uni";
-
-    //echo "current style: $currentStyle <br>";
-
-    //echo "current color: $currentColor";
 ?>
 
 
@@ -39,7 +23,7 @@
         <form action="./shopping_page.php" method="post">
             <div class="item column_left">
                 <h2>100% cotton</h2>
-                <img src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_<?php echo $currentStyle?>_<?php echo strtolower($currentColor)?>.png" alt="Sock"
+                <img src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_uni_<?php echo $currentColor?>.png" alt="Sock"
                     class="product">
                 <p>
                     <a href=""><img src="../" alt=""></a>
@@ -56,7 +40,7 @@
                     $styles = ["uni", "stripes"];
                     foreach ($styles as $style) {
                         echo '<div class="item">
-                                    <input type="radio" name="style" id="' . $style . '" value="' . $style . '" onclick="this.form.submit()">
+                                    <input type="radio" name="style" id="' . $style . '" value="' . $style . '">
                                     <label for="' . $style . '" class="item">
                                         <img src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_' . $style . '_red.png" alt="'.$style.' Sock">
                                         <p>' . $style . '</p>
