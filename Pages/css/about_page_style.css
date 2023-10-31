@@ -1,13 +1,27 @@
+@font-face {
+    font-family: "Nexa Bold";
+    src: url(../src/fonts/Nexa\ Bold.otf);
+}
+
+@font-face {
+    font-family: "Nexa Light";
+    src: url(../src/fonts/Nexa\ Light.otf);
+}
+
 .about_info{
     display: grid;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(5, 20%);
     justify-content: space-between;
+    margin: 5rem;
+    font-family: "Nexa Bold", sans-serif;
+    font-size: larger;
 }
 
 .branding{
     grid-row-start: 1;
     grid-column-start: 1;
+    color: #1e407a;
 }
 
 .branding_img{
@@ -18,6 +32,7 @@
 .colorful{
     grid-row-start: 2;
     grid-column-start: 2;
+    color: #f15b39;
 }
 
 .colorful_img{
@@ -28,6 +43,7 @@
 .brand_values{
     grid-row-start: 3;
     grid-column-start: 1;
+    color: #51b2a2;
 }
 
 .brand_values_img{
@@ -38,6 +54,7 @@
 .mission{
     grid-row-start: 4;
     grid-column-start: 2;
+    color: #fecd3e;
 }
 
 .mission_img{
@@ -48,6 +65,7 @@
 .vision{
     grid-row-start: 5;
     grid-column-start: 1;
+    color: #e990b9;
 }
 
 .vision_img{
