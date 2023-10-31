@@ -1,25 +1,25 @@
 <?php require_once("../PHP_functions/footerAndHeader.php"); ?>
 <?php 
+    $currentColor = isset($_COOKIE["_color"]) ? $_COOKIE["_color"] : "Red";
+    $currentStyle = isset($_COOKIE["_style"]) ? $_COOKIE["_style"] : "uni";
+    if (!empty($_POST["colorSock"])) {
+        setcookie ("_color", $_POST['colorSock']);
+    }
+
+    if (!empty($_POST["style"])) {
+        setcookie ("_style", $_POST['style']);
+    } 
 
 
-    // if (!empty($_POST["colorSock"])) {
-    //     $currentColor = strtolower($_POST["colorSock"]); // gets a color from the user
-    // } //else $currentColor = "red"; // default color
-
-    // if (!empty($_POST["style"])) {
-    //     $currentStyle = $_POST["style"]; // gets a style from the user
-    // } //else $currentStyle = "uni"; // default style
-
-    $cookie_duration = 1000;
-    setcookie ("_color", $_POST['colorSock'], $cookie_duration);
-    setcookie ("_style", $_POST['style'], $cookie_duration);
+    
+    
 
     $currentColor = isset($_COOKIE["_color"]) ? $_COOKIE["_color"] : "Red";
     $currentStyle = isset($_COOKIE["_style"]) ? $_COOKIE["_style"] : "uni";
 
-    echo "current style: $currentStyle <br>";
+    //echo "current style: $currentStyle <br>";
 
-    echo "current color: $currentColor";
+    //echo "current color: $currentColor";
 ?>
 
 
