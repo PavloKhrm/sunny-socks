@@ -1,0 +1,56 @@
+.about_info{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(5, 20%);
+    justify-content: space-between;
+}
+
+.branding{
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+
+.branding_img{
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+
+.colorful{
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+.colorful_img{
+    grid-row-start: 2;
+    grid-column-start: 1;
+}
+
+.brand_values{
+    grid-row-start: 3;
+    grid-column-start: 1;
+}
+
+.brand_values_img{
+    grid-row-start: 3;
+    grid-column-start: 2;
+}
+
+.mission{
+    grid-row-start: 4;
+    grid-column-start: 2;
+}
+
+.mission_img{
+    grid-row-start: 4;
+    grid-column-start: 1;
+}
+
+.vision{
+    grid-row-start: 5;
+    grid-column-start: 1;
+}
+
+.vision_img{
+    grid-row-start: 5;
+    grid-column-start: 2;
+}
