@@ -1,16 +1,14 @@
+<?php require_once("../PHP_functions/footerAndHeader.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <title>Document</title>
-    <link rel="stylesheet" href="./about_page_style.css" type="text/css">
+    <title>About Us</title>
+    <link rel="stylesheet" href="./css//about_page_style.css" type="text/css">
 </head>
 <body>
-    <div class="header">
-        <h1>About Us</h1>
-    </div>
-
+    <?php insertHeader("About Us"); ?>
     <div class="about_info">
         <div class="branding">
             <h2>Branding</h2>
@@ -48,5 +46,6 @@
         </div>
         <div class="vision_img"></div>
     </div>
+    <?php insertFooter(); ?>
 </body>
 </html>
