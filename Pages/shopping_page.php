@@ -1,10 +1,4 @@
 <?php require_once("../PHP_functions/footerAndHeader.php"); ?>
-<?php 
-if (!empty($_POST)) {
-    $currentColor = strtolower($_POST["colorSock"]); // gets a color from user
-} else $currentColor = "red"; // default color
-
-?>
 
 
 <!DOCTYPE html>
@@ -18,13 +12,14 @@ if (!empty($_POST)) {
 </head>
 
 <body>
+
     <?php insertHeader("Shopping");?>
     <main>
         <form action="./shopping_page.php" method="post">
             <div class="item column_left">
                 <h2>100% cotton</h2>
-                <img src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_uni_<?php echo $currentColor?>.png" alt="Sock"
-                    class="product">
+                <img src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_uni_red.png" alt="Sock"
+                    class="product" id="mainImg">
                 <p>
                     <a href=""><img src="../" alt=""></a>
                 <h2 class="no_top_margin">3.99€</h2>
@@ -39,8 +34,9 @@ if (!empty($_POST)) {
                     <?php
                     $styles = ["uni", "stripes"];
                     foreach ($styles as $style) {
+
                         echo '<div class="item">
-                                    <input type="radio" name="style" id="' . $style . '" value="' . $style . '">
+                                    <input type="radio" name="style" id="' . $style . '" value="' . $style . '" onclick="changeStyle(\''.$style.'\')">
                                     <label for="' . $style . '" class="item">
                                         <img src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_' . $style . '_red.png" alt="'.$style.' Sock">
                                         <p>' . $style . '</p>
@@ -54,7 +50,7 @@ if (!empty($_POST)) {
                     <?php
                     $colors = ["Red", "Pink", "Yellow", "Green", "Blue"];
                     foreach ($colors as $color) {
-                        echo '<input type="radio" name="colorSock" id="color' . $color . '" value="' . $color . '" onclick="this.form.submit()">
+                        echo '<input type="radio" name="colorSock" id="color' . $color . '" value="' . $color . '" onclick="changeColor(\''.$color.'\')">
                                 <label for="color' . $color . '">
                                     <img src="../src/sunny_illustrations/png/Sunny_socks_' . $color . '.png" alt="' . $color . ' Illustration" class="illustration">
                                     
@@ -65,6 +61,7 @@ if (!empty($_POST)) {
             </div>
         </form>
     </main>
+    <script src="../JS_functions/shopping_page.js"></script>
     <?php insertFooter(); ?>
 </body>
 
