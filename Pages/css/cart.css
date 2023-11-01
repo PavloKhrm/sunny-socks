@@ -1,0 +1,27 @@
+.flexItem img{
+    height: 25dvh;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: auto;
+}
+
+.flexItem{
+    flex-direction: row;
+    border: solid thick darkblue;
+    margin: 5px;
+}
+
+.button{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    border: 1px solid red;
+    padding: 5px;
+    background-color: red;
+    border-radius: 0.2rem;
+}
