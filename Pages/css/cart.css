@@ -11,7 +11,6 @@ body{
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    height: auto;
 }
 
 .flexItem{
@@ -24,12 +23,21 @@ body{
 .button{
     text-decoration: none;
     color: white;
-    border: 1px solid #f15b39;
     padding: 5px;
-    background-color: #f15b39;
     border-radius: 0.2rem;
+    margin: 1dvh;
+}
+
+.clearButton{
+    background-color: #f15b39;
+    border: 1px solid #f15b39;
+}
+
+.backButton{
+    background-color: #1E407A;
+    border: 1px solid #1E407A;
 }
 main{
     margin: 1dvh;
-    
+    min-height: 70dvh;
 }
