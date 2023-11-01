@@ -77,11 +77,11 @@
                 <h2>100% cotton</h2>
                 <img src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_<?php echo $styleItem . '_' . $colorItem; ?>.png" alt="Sock"
                     class="product" id="mainImg">
-                <p>
-                    <a href=""><img src="../" alt=""></a>
-                <h2 class="no_top_margin">3.99€</h2>
-                <a href=""><img src="" alt=""></a>
-                </p>
+                <div class="flex flexLogos">
+                    <a href="https://www.hema.nl"><img src="../src/Logo/png/hema-logo-png-transparent.png" alt="Hema Logo" class="hemaLogo"></a>
+                    <h2 class="no_top_margin">3.99€</h2>
+                    <a href="https://www.bol.com/nl/nl/"><img src="../src/Logo/png/bol-logo.png" alt="Bol Logo" class="bolLogo"></a>
+                </div>
             </div>
 
             <div class="item column_right">
