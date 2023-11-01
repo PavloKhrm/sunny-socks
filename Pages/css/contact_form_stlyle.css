@@ -10,7 +10,7 @@ body {
   margin: 10px;
   padding: 0px;  
   padding-left: 100px;
-  justify-content: center; /* Выравниваем контейнер по центру по горизонтали */
+  justify-content: center; 
   align-items: center; 
   }
   
@@ -21,7 +21,6 @@ body {
     border-radius: 5px;
     color: #1E407A;
     font-size: 18px; 
-    
     font-family: "Arial", sans-serif;
     border: 9px solid #FECD3E;
     max-width: 250px;
@@ -30,17 +29,20 @@ body {
   .contact-info-p {
     text-align: center;
     color: #1E407A;
+    font-size: 30;
 }
   
   .contact-form {
     grid-column: 2; 
     background-color: white;
-    padding: 10px;
+    padding-left: 70px; 
+    padding-right: 30px;
+   padding-bottom: 10px;
     border-radius: 5px;
     color: #1E407A;
     border: 9px solid #FECD3E;
     font-family: "Arial", sans-serif;
-    max-width: 650px;
+    max-width: 50vh;
     margin-left: -300px;
   }
 
@@ -62,10 +64,14 @@ label {
 button {
     background-color: #FECD3E;
     color: #1E407A;
-    padding: 10px 30px;
+    padding: 10px 50px;
     border: none;
     border-radius: 100px;
     cursor: pointer;
+}
+
+.buttton{
+    text-align: right;
 }
 
 .email, .email2, .phone, .phone2{
@@ -75,3 +81,73 @@ button {
 .email, .phone{
      font-weight: bold;
 }
+.vertikal_el{
+    display: flex; 
+    align-items: center; 
+  }
+  
+.vertikal_el img {
+    vertical-align: middle; 
+}
+
+
+.contact-form label {
+    margin-bottom: 10px;
+}
+
+/* styles.css */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40vh;
+    height: 20vh;
+    background-color: #fff;
+    border: 8px solid #FECD3E; /* Увеличиваем ширину обводки до 8 пикселей */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-content {
+    text-align: center;
+    color: #1E407A;
+}
+
+.modal-text {
+    font-size: 20px;
+}
+
+.modal-image {
+    width: 32px;
+    height: 32px;
+    margin-top: 10px;
+}
+
+.open-modal-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-modal-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
