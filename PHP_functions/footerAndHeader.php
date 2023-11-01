@@ -12,6 +12,7 @@ function insertHeaderAndFooterStyle() {
             src: url('../src/fonts/Nexa\ Light.otf');
         }
 
+
         body {
             margin: 0;
             display: flex;
@@ -20,6 +21,7 @@ function insertHeaderAndFooterStyle() {
         }
         
         .header {
+            font-family: 'Nexa Light';
             background-color: #1E407A;
             min-height: 17dvh;
             display: flex;
@@ -43,6 +45,7 @@ function insertHeaderAndFooterStyle() {
             max-width:400px;
         }
         .footer {
+            font-family: 'Nexa Light';
             display:flex;
             flex-wrap:wrap;
             background-color: #FECD3E;
@@ -105,6 +108,7 @@ function insertHeaderAndFooterStyle() {
             color:white;
             font-weight: 1000;
             font-size:20px;
+            font-family: 'Nexa Bold';
         }
         .icon-social {
             width:50px;
