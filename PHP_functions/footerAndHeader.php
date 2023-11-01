@@ -2,6 +2,16 @@
 //stylesheet
 function insertHeaderAndFooterStyle() {
         echo "<style>
+        @font-face {
+            font-family: 'Nexa Bold';
+            src: url('../../src/fonts/Nexa\ Bold.otf');
+        }
+        
+        @font-face {
+            font-family: 'Nexa Light';
+            src: url('../../src/fonts/Nexa\ Light.otf');
+        }
+
         body {
             margin: 0;
             display: flex;
