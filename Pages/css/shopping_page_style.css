@@ -82,7 +82,7 @@ label{
     border: solid thin transparent;
 }
 #mainImg {
-    transition:all 100ms;
+    transition:all 600ms;
 }
 
 .button{

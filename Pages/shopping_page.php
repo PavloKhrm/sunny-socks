@@ -95,7 +95,7 @@
                         echo '<div class="item">
                                     <input type="radio" name="style" id="' . $style . '" value="' . $style . '" onclick="changeStyle(\''.$style.'\'); location.href=\'shopping_page.php?styleItem=' . $style . '&colorItem=' . $colorItem . '\'">
                                     <label for="' . $style . '" class="item">
-                                        <img src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_' . $style . '_red.png" alt="'.$style.' Sock">
+                                        <img src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_' . $style . '_Red.png" alt="'.$style.' Sock">
                                         <p>' . $style . '</p>
                                     </label>
                                 </div>';
