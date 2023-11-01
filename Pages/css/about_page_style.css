@@ -13,9 +13,9 @@
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(5, 20%);
     justify-content: space-between;
-    margin: 5rem;
+    margin: 3rem 9rem 3rem 9rem;
     font-family: "Nexa Bold", sans-serif;
-    font-size: larger;
+    font-size: 2rem;
 }
 
 .branding{
@@ -27,6 +27,11 @@
 .branding_img{
     grid-row-start: 1;
     grid-column-start: 2;
+    width: 25rem;
+    height: 25rem;
+    position: relative;
+    left: 4rem;
+    border-radius: 50%; /* adjusts corners to 50% to round the image to a circle */
 }
 
 .colorful{
@@ -38,6 +43,9 @@
 .colorful_img{
     grid-row-start: 2;
     grid-column-start: 1;
+    width: 25rem;
+    height: 25rem;
+    
 }
 
 .brand_values{
@@ -49,6 +57,9 @@
 .brand_values_img{
     grid-row-start: 3;
     grid-column-start: 2;
+    width: 34rem;
+    height: 22rem;
+    
 }
 
 .mission{
@@ -60,6 +71,9 @@
 .mission_img{
     grid-row-start: 4;
     grid-column-start: 1;
+    width: 21rem;
+    height: 21rem;
+    
 }
 
 .vision{
@@ -68,7 +82,15 @@
     color: #e990b9;
 }
 
-.vision_img{
+.recycle_img{
     grid-row-start: 5;
     grid-column-start: 2;
+    width: 33rem;
+    height: 30rem;
+    
+}
+.back_button:link{
+    text-decoration: none;
+    font-family: "Nexa Light", sans-serif;
+
 }
