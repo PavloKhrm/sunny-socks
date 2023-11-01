@@ -1,13 +1,3 @@
-@font-face {
-    font-family: "Nexa Bold";
-    src: url(../src/fonts/Nexa\ Bold.otf);
-}
-
-@font-face {
-    font-family: "Nexa Light";
-    src: url(../src/fonts/Nexa\ Light.otf);
-}
-
 .about_info{
     display: grid;
     grid-template-columns: repeat(2, 50%);

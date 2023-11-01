@@ -3,6 +3,12 @@ body{
     margin: 0;
 }
 
+main{
+    margin: auto;
+    margin-left: 0;
+    margin-right: 0;
+}
+
 main>form{
     display: grid;
     grid-template-columns: 1fr 3fr 3fr 1fr;

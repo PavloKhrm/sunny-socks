@@ -16,24 +16,24 @@ require_once("../PHP_functions/footerAndHeader.php"); ?>
     <?php
     insertHeader("Cart");
     ?>
-    <div class="flex">
+    <main class="flex">
         <?php
         if (isset($_SESSION["cart"])) {
             foreach ($_SESSION["cart"] as $item) {
                 echo "<div class ='flexItem flex' > <img src='../src/sunny_socks_photos/packaging/png/catalogus_sokken_" . $item["style"] . "_" . $item["color"] . ".png' alt='Sock'><h2>Quantity: " . $item['quantity'] . "</h2></div>";
             }
-        }
-        else{
+        } else {
             echo "<h1>No Items in Cart!</h1>";
         }
 
 
         ?>
         <a href="clearCart.php" class="button">Clear Cart</a>
-    </div>
+    </main>
     <?php
     insertFooter();
     ?>
+
 </body>
 
 </html>

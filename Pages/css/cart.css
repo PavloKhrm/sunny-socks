@@ -1,3 +1,7 @@
+body{
+    font-family: "Nexa Light", sans-serif;
+}
+
 .flexItem img{
     height: 25dvh;
 }
@@ -14,13 +18,18 @@
     flex-direction: row;
     border: solid thick darkblue;
     margin: 5px;
+    min-width: 80%;
 }
 
 .button{
     text-decoration: none;
     color: white;
-    border: 1px solid red;
+    border: 1px solid #f15b39;
     padding: 5px;
-    background-color: red;
+    background-color: #f15b39;
     border-radius: 0.2rem;
+}
+main{
+    margin: 1dvh;
+    
 }
