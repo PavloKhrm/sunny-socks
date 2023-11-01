@@ -21,12 +21,15 @@ function insertHeaderAndFooterStyle() {
         }
         
         .header {
+            position:sticky;
+            top:0;
             font-family: 'Nexa Light';
             background-color: #1E407A;
             min-height: 17dvh;
             display: flex;
             justify-content: center;
             align-items: center;
+            z-index:999;
         }
         .about {
             margin-right: 25vw;
