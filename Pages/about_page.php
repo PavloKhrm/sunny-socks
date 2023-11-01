@@ -48,7 +48,10 @@
         </div>
         <img src="../src/images_about/recycle.png" alt="recycle symbol with the word sunny in the middle" class="recycle_img">
         <!--- Button to send user back to the top of the page --->
-        <a href="#goBack" class="back_button">go back</a>
+        <div class="back_container">
+            <a href="#goBack" class="back_button">go back<img src="../src/images_about/arrow_back.png" alt="back button arrow"></a>
+            
+        </div>
     </div>
     <?php insertFooter(); ?>
 </body>

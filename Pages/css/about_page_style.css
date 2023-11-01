@@ -1,7 +1,17 @@
+@font-face {
+    font-family: "Nexa Bold";
+    src: url(../src/fonts/Nexa\ Bold.otf);
+}
+
+@font-face {
+    font-family: "Nexa Light";
+    src: url(../src/fonts/Nexa\ Light.otf);
+}
+
 .about_info{
     display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(5, 20%);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr), 2rem;
     justify-content: space-between;
     margin: 3rem 9rem 3rem 9rem;
     font-family: "Nexa Bold", sans-serif;
@@ -79,8 +89,23 @@
     height: 30rem;
     
 }
+
+/*All styling and positioning for the back button*/
+
+.back_container{
+    grid-column-start: 2;
+    grid-row-start: 6;
+    justify-self: end;
+}
+
 .back_button:link{
     text-decoration: none;
-    font-family: "Nexa Light", sans-serif;
+    font-family: "Nexa Bold", sans-serif;
+    color: #fecd3e;
+}
 
+.back_button:visited{
+    color: #fecd3e;
+    position: relative;
+    left: 30rem;
 }
