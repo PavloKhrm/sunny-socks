@@ -6,7 +6,7 @@ function changeImage() {
     
     setTimeout(() => {
         changingImage.src = "../src/sunny_socks_photos/packaging/png/catalogus_sokken_" + currentStyle+ "_" + currentColor + ".png" ;
-        changingImage.style["opacity"] = 1;//"Delayed for 1 second.";
+        changingImage.style["opacity"] = 1;//"Delayed for 0.3 second.";
     }, "300");
 
     
