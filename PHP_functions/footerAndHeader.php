@@ -4,12 +4,12 @@ function insertHeaderAndFooterStyle() {
         echo "<style>
         @font-face {
             font-family: 'Nexa Bold';
-            src: url('../../src/fonts/Nexa\ Bold.otf');
+            src: url('../src/fonts/Nexa\ Bold.otf');
         }
         
         @font-face {
             font-family: 'Nexa Light';
-            src: url('../../src/fonts/Nexa\ Light.otf');
+            src: url('../src/fonts/Nexa\ Light.otf');
         }
 
         body {
@@ -121,6 +121,15 @@ function insertHeaderAndFooterStyle() {
         a {
             text-decoration:none;
         }
+        .fig-cart {
+            display:flex;
+            padding-right:5px;
+            justify-content:flex-end;
+            margin-top:5px;
+        }
+        .fig-catalogue {
+            margin-top:5px;
+        }
     </style>";
     }
     //header div
@@ -156,10 +165,20 @@ function insertFooter() {
                     <figcaption>About us</figcaption>
                     </a>
                 </figure>
+                <a href="../Pages/about_page.php">
                 <figure>
                     <img class="icon" src="../src/footer_images/socks_pink.png" alt="icon">
-                    <figcaption>Catalogue</figcaption>
+                    <figcaption class = "fig-catalogue" >Catalogue</figcaption>
                 </figure>
+                </a>
+                
+                <figure>
+                    <a href="../Pages/cart.php">
+                        <img class="icon" src="../src/footer_images/shopping-cart.png" alt="icon">
+                        <figcaption class="fig-cart">Cart</figcaption>
+                    </a>
+                </figure>
+                
                     
                     
                 </div>

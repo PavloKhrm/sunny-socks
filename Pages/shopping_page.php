@@ -77,11 +77,11 @@
                 <h2>100% cotton</h2>
                 <img src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_<?php echo $styleItem . '_' . $colorItem; ?>.png" alt="Sock"
                     class="product" id="mainImg">
-                <p>
-                    <a href=""><img src="../" alt=""></a>
-                <h2 class="no_top_margin">3.99€</h2>
-                <a href=""><img src="" alt=""></a>
-                </p>
+                <div class="flex flexLogos">
+                    <a target ="_blank" href="https://www.hema.nl"><img src="../src/Logo/png/hema-logo-png-transparent.png" alt="Hema Logo" class="hemaLogo"></a>
+                    <h2 class="no_top_margin">3.99€</h2>
+                    <a target ="_blank" href="https://www.bol.com/nl/nl/"><img src="../src/Logo/png/bol-logo.png" alt="Bol Logo" class="bolLogo"></a>
+                </div>
             </div>
 
             <div class="item column_right">
@@ -95,7 +95,7 @@
                         echo '<div class="item">
                                     <input type="radio" name="style" id="' . $style . '" value="' . $style . '" onclick="changeStyle(\''.$style.'\'); location.href=\'shopping_page.php?styleItem=' . $style . '&colorItem=' . $colorItem . '\'">
                                     <label for="' . $style . '" class="item">
-                                        <img src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_' . $style . '_red.png" alt="'.$style.' Sock">
+                                        <img src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_' . $style . '_Red.png" alt="'.$style.' Sock">
                                         <p>' . $style . '</p>
                                     </label>
                                 </div>';
@@ -116,8 +116,7 @@
                     ?>
                 </div>
 
-                <a href="shopping_page.php?styleItem=<?php echo $styleItem . '&colorItem=' . $colorItem . '&buyItem='.$styleItem . $colorItem?>">Add to cart</a>
-                <a href="cart.php">Open cart</a>
+                <a href="shopping_page.php?styleItem=<?php echo $styleItem . '&colorItem=' . $colorItem . '&buyItem='.$styleItem . $colorItem?>" class="button">Add to cart</a>
             </div>
         </form>
     </main>
