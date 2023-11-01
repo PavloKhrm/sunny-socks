@@ -116,8 +116,7 @@
                     ?>
                 </div>
 
-                <a href="shopping_page.php?styleItem=<?php echo $styleItem . '&colorItem=' . $colorItem . '&buyItem='.$styleItem . $colorItem?>">Add to cart</a>
-                <a href="cart.php">Open cart</a>
+                <a href="shopping_page.php?styleItem=<?php echo $styleItem . '&colorItem=' . $colorItem . '&buyItem='.$styleItem . $colorItem?>" class="button">Add to cart</a>
             </div>
         </form>
     </main>

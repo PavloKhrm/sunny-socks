@@ -84,3 +84,18 @@ label{
 #mainImg {
     transition:all 100ms;
 }
+
+.button{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    border: solid 1px #1E407A;
+    background-color: #1E407A;
+    margin-top: 5dvh;
+    height: 5dvh;
+    width: 15dvw;
+    border-radius: 0.2rem;
+    font-size: larger;
+    align-items: center;
+    justify-content: center;
+}
