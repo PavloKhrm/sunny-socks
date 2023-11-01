@@ -4,12 +4,12 @@ function insertHeaderAndFooterStyle() {
         echo "<style>
         @font-face {
             font-family: 'Nexa Bold';
-            src: url('../../src/fonts/Nexa\ Bold.otf');
+            src: url('../src/fonts/Nexa\ Bold.otf');
         }
         
         @font-face {
             font-family: 'Nexa Light';
-            src: url('../../src/fonts/Nexa\ Light.otf');
+            src: url('../src/fonts/Nexa\ Light.otf');
         }
 
         body {
