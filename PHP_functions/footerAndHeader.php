@@ -6,7 +6,6 @@ function insertHeaderAndFooterStyle() {
             font-family: 'Nexa Bold';
             src: url('../src/fonts/Nexa\ Bold.otf');
         }
-        
         @font-face {
             font-family: 'Nexa Light';
             src: url('../src/fonts/Nexa\ Light.otf');
@@ -33,7 +32,6 @@ function insertHeaderAndFooterStyle() {
             color:#FECD3E;
             font-size: 5vh;
             font-family: 'Nexa Bold', sans-serif;
-    
         }
         .logo-img {
             min-height: 25px;
@@ -61,7 +59,6 @@ function insertHeaderAndFooterStyle() {
         .footer-image-logo{
             margin-top:15px;
             height:80px;
-
         }
         .footer-navigation {
             display:flex;
@@ -129,7 +126,6 @@ function insertHeaderAndFooterStyle() {
         .icon-social {
             height:50px;
             width:50px;
-            
         }
         .footer-icons {
             width:30%;
