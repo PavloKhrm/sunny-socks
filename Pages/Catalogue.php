@@ -9,7 +9,10 @@
 <body>
     <link rel="stylesheet" href="./css/catalogue.css">
     <?php
-    insertHeader("Catalogue"); //insert header from external file
+        insertHeader("Catalogue"); //insert header from external file
+    ?>
+    <?php
+        require_once("../PHP_functions/phoneMenu.php");
     ?>
 
     <div class="page_header">
@@ -57,5 +60,6 @@
     <?php
     insertFooter(); //insert footer from external file
     ?>
+    <script src="../JS_functions/phone_menu.js"></script>
 </body>
 </html>

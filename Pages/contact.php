@@ -10,8 +10,11 @@ require_once("../PHP_functions/footerAndHeader.php"); ?>
     <title>Контакты</title>
 </head>
 <body>
-<?php
-    insertHeader("Cart");
+    <?php
+        insertHeader("Cart");
+    ?>
+    <?php
+        require_once("../PHP_functions/phoneMenu.php");
     ?>
     <div class="container">
         <div class="contact-info">
@@ -66,6 +69,7 @@ require_once("../PHP_functions/footerAndHeader.php"); ?>
      <?php
     insertFooter();
     ?>
+    <script src="../JS_functions/phone_menu.js"></script>
     
 </body>
 </html>
