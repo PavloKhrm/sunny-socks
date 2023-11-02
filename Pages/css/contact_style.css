@@ -9,22 +9,21 @@ body {
   grid-gap: 20px;
   margin: 10px;
   padding: 0px;  
-  padding-left: 100px;
-  justify-content: center; /* Выравниваем контейнер по центру по горизонтали */
+  padding-left: 20vh;
+  justify-content: center; 
   align-items: center; 
   }
   
   .contact-info {
     grid-column: 1; 
     background-color: white;
-    padding: 10px;
+    padding: 3vh;
     border-radius: 5px;
     color: #1E407A;
     font-size: 18px; 
-    
     font-family: "Arial", sans-serif;
     border: 9px solid #FECD3E;
-    max-width: 250px;
+    max-width: 30vh;
   }
   
   .contact-info-p {
@@ -36,16 +35,15 @@ body {
   .contact-form {
     grid-column: 2; 
     background-color: white;
-    padding: 10px;
-    padding-left: 10vh; 
-    padding-right: 5vh;
+    padding-left: 15vh; 
+    padding-right: 10vh;
    padding-bottom: 2vh;
     border-radius: 5px;
     color: #1E407A;
     border: 9px solid #FECD3E;
     font-family: "Arial", sans-serif;
-    max-width: 650px;
-    margin-left: -300px;
+    max-width: 60vh;
+    margin-left: -35vh;
   }
 
   input, textarea {
@@ -66,10 +64,14 @@ label {
 button {
     background-color: #FECD3E;
     color: #1E407A;
-    padding: 10px 30px;
+    padding: 10px 50px;
     border: none;
     border-radius: 100px;
     cursor: pointer;
+}
+
+.buttton{
+    text-align: right;
 }
 
 .email, .email2, .phone, .phone2{
