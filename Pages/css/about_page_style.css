@@ -109,7 +109,7 @@
 }
 
 /*Phone sizes below*/
-@media (max-width: 600px){ /*Checks screen size and executes style below if smaller than 600px*/
+@media (max-width: 1200px){ /*Checks screen size and executes style below if smaller than 600px*/
     .about_info{
         display: flex;
         flex-direction: column;
@@ -123,16 +123,24 @@
         height: 25rem;
         border-radius: 50%;
         position: static;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .colorful_img{
         max-width: 100%;
         height: 30rem;
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .brand_values_img{
         max-width: 100%;
         height: 22rem;
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .mission_img{
@@ -146,6 +154,9 @@
     .recycle_img{
         max-width: 100%;
         height: 30rem;
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 
