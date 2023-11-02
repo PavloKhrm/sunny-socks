@@ -1,0 +1,34 @@
+.page_header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    margin: 3vh;
+}
+
+.header_word_blue{
+    color: #1E407A;
+}
+
+.header_word_green{
+    color: #51B2A2;
+}
+
+.header_word_orange{
+    color: #F15B39;
+}
+
+.header_word_pink{
+    color: #E990B9;
+}
+
+.header_word_yellow{
+    color: #FECD3E;
+}
+
+.page_content{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
