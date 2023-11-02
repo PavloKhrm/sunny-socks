@@ -3,9 +3,9 @@ echo '
         <div class = "menu-div" id ="menuDiv">
             <div class = "menu-rect" id = "menuRect">
                 <svg viewBox="0 0 100 80" width="40" height="40">
-                    <rect width="100" height="20"></rect>
-                    <rect y="30" width="100" height="20"></rect>
-                    <rect y="60" width="100" height="20"></rect>
+                    <rect width="100" height="10" fill="#FECD3E"></rect>
+                    <rect y="30" width="100" height="10" fill="#FECD3E"></rect>
+                    <rect y="60" width="100" height="10" fill="#FECD3E"></rect>
                 </svg>
             </div>
         </div>
@@ -41,7 +41,11 @@ echo '
     echo "
         <style>
             .menu-div {
+                z-index:1001;
                 display:none;
+                justify-content:flex-end;
+                align-items:center;
+                background-color:#1E407A;
             }
             #phoneMenu{
                 transition:1s;
@@ -55,10 +59,8 @@ echo '
                 overflow:hidden;
             }
             .menu-rect {
-                position:absolute;
-                top:0;
-                right:0;  
-                z-index:1000
+                margin:0 10px;
+                z-index:1000;
             }
             .phone-menu {
                 position:absolute;
