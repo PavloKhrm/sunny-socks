@@ -87,6 +87,7 @@ label{
     cursor: pointer;
     border: solid thin transparent;
 }
+
 #mainImg {
     transition:all 600ms;
 }
