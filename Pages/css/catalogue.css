@@ -30,5 +30,21 @@
 
 .page_content{
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: 6fr 4fr;
+    border: #E990B9 solid;
+    height: 55vh;
+    margin-left: 15vh;
+    margin-right: 15vh;
+}
+
+.left_collumn_part{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 27vh;
+}
+
+.image{
+    object-fit: contain;
+    height: 27vh;    
 }
