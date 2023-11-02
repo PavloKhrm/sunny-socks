@@ -10,12 +10,17 @@ require_once("../PHP_functions/footerAndHeader.php"); ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
     <link rel="stylesheet" href="./css/cart_style.css">
+    <link rel="stylesheet" href="./css/menu.css">
 </head>
 
 <body>
     <?php
-    insertHeader("Cart");
+        insertHeader("Cart");
     ?>
+    <?php
+        require_once("../PHP_functions/phoneMenu.php");
+    ?>
+  
     <main class="flex">
         <?php
         $totalPrice = 0;
@@ -42,6 +47,8 @@ require_once("../PHP_functions/footerAndHeader.php"); ?>
     <?php
     insertFooter();
     ?>
+    <script src="../JS_functions/phone_menu.js"></script>
+
 
 </body>
 
