@@ -1,5 +1,6 @@
 body{
     font-family: "Nexa Light", sans-serif;
+    color: #1E407A;
 }
 
 .flex_item img{
@@ -17,8 +18,9 @@ body{
 
 .flex_item{
     flex-direction: row;
-    border: solid thick darkblue;
+    border: solid thick #1E407A;
     min-width: 80%;
+    border-radius: 0.2rem;
 }
 
 .button{
@@ -43,5 +45,5 @@ body{
 }
 main{
     margin: 1dvh;
-    min-height: 70dvh;
+    min-height: 64dvh;
 }

@@ -69,7 +69,12 @@
 
 <body>
 
-    <?php insertHeader("Shopping");?>
+    <?php 
+        insertHeader("Shopping");
+    ?>
+    <?php
+        require_once("../PHP_functions/phoneMenu.php");
+    ?>
 
     <main>
         <form action="./shopping_page.php" method="post">
@@ -122,6 +127,7 @@
     </main>
     <script src="../JS_functions/shopping_page.js"></script>
     <?php insertFooter(); ?>
+    <script src="../JS_functions/phone_menu.js"></script>
 </body>
 
 </html>

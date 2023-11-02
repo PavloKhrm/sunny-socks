@@ -10,9 +10,12 @@
 <body>
     <!--- Id for where the "go back" button takes the user --->
     <div id="goBack"></div>
-
-    <?php insertHeader("About Us"); ?>
-
+    <?php 
+        insertHeader("About Us"); 
+    ?>
+    <?php
+        require_once("../PHP_functions/phoneMenu.php");
+    ?>
     <div class="about_info">
         <div class="branding">
             <h2>Branding</h2>
@@ -59,8 +62,9 @@
             <a href="#goBack" class="back_button">go back<img src="../src/images_about/arrow_back.png" alt="back button arrow"></a>
         </div>
     </div>
-
-    <?php insertFooter(); ?>
-
+    <?php 
+        insertFooter(); 
+    ?>
+    <script src="../JS_functions/phone_menu.js"></script>
 </body>
 </html>

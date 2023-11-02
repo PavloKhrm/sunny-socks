@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/catalogue.css">
 </head>
 <body>
-    <link rel="stylesheet" href="./css/catalogue.css">
     <?php
-    insertHeader("Catalogue"); //insert header from external file
+        insertHeader("Catalogue"); //insert header from external file
+    ?>
+    <?php
+        require_once("../PHP_functions/phoneMenu.php");
     ?>
 
     <div class="page_header">
@@ -49,13 +52,14 @@
 
 
 
-        <div class="right_collumn">
-            <img class="image_right_collumn" src="../src/images_catalogue/sneaker_with_yellow_sock.png" alt="">
+        <div class="right_collumn" id ="rightColumn">
+            <img class="image_right_collumn" src="../src/images_catalogue/sneaker_with_yellow_sock.png" alt="" id ="yellowSneaker">
         </div>   
     </div>
 
     <?php
     insertFooter(); //insert footer from external file
     ?>
+    <script src="../JS_functions/phone_menu.js"></script>
 </body>
 </html>
