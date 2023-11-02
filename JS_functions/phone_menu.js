@@ -15,11 +15,11 @@ window.addEventListener("resize", resetMenu);
 let menuIsDisplayed = false;
 function changeMenuDisplay() {
     if (menuIsDisplayed) {
-        document.getElementById("phoneMenu").style["display"] = "none";
+        document.getElementById("phoneMenu").style["width"] = "0";
         menuIsDisplayed = false;
         document.body.style["overflow"] = "scroll";
     } else {
-        document.getElementById("phoneMenu").style["display"] = "flex";
+        document.getElementById("phoneMenu").style["width"] = "100%";
         menuIsDisplayed = true;
         document.body.style["overflow"] = "hidden";
     }

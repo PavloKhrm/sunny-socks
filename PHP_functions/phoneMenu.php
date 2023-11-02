@@ -40,6 +40,11 @@ echo '
 
     echo "
         <style>
+            #phoneMenu{
+                transition:1s;
+                display:flex;
+                width:0;
+            }
             .menu-div {
                 position:relative;
                 width:100%;
