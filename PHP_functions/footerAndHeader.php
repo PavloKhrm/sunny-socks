@@ -11,15 +11,12 @@ function insertHeaderAndFooterStyle() {
             font-family: 'Nexa Light';
             src: url('../src/fonts/Nexa\ Light.otf');
         }
-
-
         body {
             margin: 0;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
         }
-        
         .header {
             position:sticky;
             top:0;
@@ -34,7 +31,6 @@ function insertHeaderAndFooterStyle() {
         .about {
             margin-right: 25vw;
             color:#FECD3E;
-            
             font-size: 5vh;
             font-family: 'Nexa Bold', sans-serif;
     
@@ -77,11 +73,14 @@ function insertHeaderAndFooterStyle() {
             gap:20px;
         }
         .icon {
+            position:absolute;
+            top:0;
+            left:50%;
+            transform:translateX(-50%);
             margin: 5px 0 0 0;
-            height:60px;
-            width:60px;
+            height50px;
+            width:50px;
             flex-basis:auto;
-            
         }
         .icon-p {
             color:white;
@@ -103,19 +102,34 @@ function insertHeaderAndFooterStyle() {
             margin-left:200px;
         }
         figure{
+            position:relative;
+            display:flex;
+            justify-content:center;
+            align-items:center;
             margin:0;
             padding:0;
+            width:100px;
+            height:100px;
         }
-        figcaption {
+        figure figcaption {
+            position:absolute;
+            top:60%;
+            left:55%;
+            transform:translateX(-45%);
+            text-align:center;
             margin-left:-10%;
             color:white;
             font-weight: 1000;
-            font-size:20px;
+            font-size:16px;
             font-family: 'Nexa Bold';
+            min-width:100px;
+            display:flex;
+            justify-content:center;
         }
         .icon-social {
-            width:50px;
             height:50px;
+            width:50px;
+            
         }
         .footer-icons {
             width:30%;
@@ -125,17 +139,8 @@ function insertHeaderAndFooterStyle() {
             justify-content:center;
             align-items:center;
         }
-        a {
+        figure a {
             text-decoration:none;
-        }
-        .fig-cart {
-            display:flex;
-            padding-right:5px;
-            justify-content:flex-end;
-            margin-top:5px;
-        }
-        .fig-catalogue {
-            margin-top:5px;
         }
     </style>";
     }
@@ -172,27 +177,23 @@ function insertFooter() {
                     <figcaption>About us</figcaption>
                     </a>
                 </figure>
-                <a href="../Pages/about_page.php">
                 <figure>
-                    <img class="icon" src="../src/footer_images/socks_pink.png" alt="icon">
-                    <figcaption class = "fig-catalogue" >Catalogue</figcaption>
+                    <a href="../Pages/about_page.php">
+                        <img class="icon" src="../src/footer_images/socks_pink.png" alt="icon">
+                        <figcaption class = "fig-catalogue" >Catalogue</figcaption>
+                    </a>
                 </figure>
-                </a>
-                
-                <figure>
+                <figure class = "cart">
                     <a href="../Pages/cart.php">
-                        <img class="icon" src="../src/footer_images/shopping-cart.png" alt="icon">
+                        <img class="icon" src="../src/footer_images/cart.png" alt="icon">
                         <figcaption class="fig-cart">Cart</figcaption>
                     </a>
                 </figure>
-                
-                    
-                    
                 </div>
             </div>
             <div class="footer-icons">
-            <img class="icon-social" src="../src/footer_images/facebook_1.png" alt="icon">
-            <img class="icon-social" src="../src/footer_images/instagram_1.png" alt="icon">
+                <img class="icon-social" src="../src/footer_images/facebook_1.png" alt="icon">
+                <img class="icon-social" src="../src/footer_images/instagram_1.png" alt="icon">
             </div>
         </div>';
 }
