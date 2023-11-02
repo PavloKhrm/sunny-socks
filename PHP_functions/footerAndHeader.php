@@ -71,7 +71,7 @@ function insertHeaderAndFooterStyle() {
         }
         .icon {
             position:absolute;
-            top:0;
+            top:10%;
             left:50%;
             transform:translateX(-50%);
             margin: 5px 0 0 0;
@@ -110,7 +110,7 @@ function insertHeaderAndFooterStyle() {
         }
         figure figcaption {
             position:absolute;
-            top:60%;
+            top:70%;
             left:55%;
             transform:translateX(-45%);
             text-align:center;
@@ -174,7 +174,7 @@ function insertFooter() {
                     </a>
                 </figure>
                 <figure>
-                    <a href="../Pages/about_page.php">
+                    <a href="../Pages/Catalogue.php">
                         <img class="icon" src="../src/footer_images/socks_pink.png" alt="icon">
                         <figcaption class = "fig-catalogue" >Catalogue</figcaption>
                     </a>
