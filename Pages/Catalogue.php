@@ -21,30 +21,31 @@
     </div>
 
     <div class="page_content">
-        <div class= "left_collumn">
-            <div class="left_collumn_part"> <!--top part of left collumn-->
-                <div class="buy_now" >
-                    <h1>Buy Now</h1>
+        <a href="./shopping_page.php">
+            <div class= "left_collumn">
+                <div class="left_collumn_part"> <!--top part of left collumn-->
+                    <div class="buy_now" >
+                        <h1>Buy Now</h1>
+                    </div>
+                    <img class="image_left_collumn" src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_stripes_Blue.png" alt="blue striped sock photo">
+                    <img class="image_left_collumn" src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_stripes_Green.png" alt="green striped ock photo">
+                    <img class="image_left_collumn" src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_stripes_Pink.png" alt="pink striped sock photo">
+                    <img class="image_left_collumn" src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_stripes_Red.png" alt="red striped sock photo">
+                    <img class="image_left_collumn" src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_stripes_Yellow.png" alt="yellow striped sock photo">
                 </div>
-                <img class="image_left_collumn" src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_stripes_Blue.png" alt="blue striped sock photo">
-                <img class="image_left_collumn" src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_stripes_Green.png" alt="green striped ock photo">
-                <img class="image_left_collumn" src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_stripes_Pink.png" alt="pink striped sock photo">
-                <img class="image_left_collumn" src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_stripes_Red.png" alt="red striped sock photo">
-                <img class="image_left_collumn" src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_stripes_Yellow.png" alt="yellow striped sock photo">
-            </div>
 
-            <div class="left_collumn_part"> <!--bottom part of left collumn-->
-                <div class="buy_now" >
-                    <h1>Buy Now</h1>
+                <div class="left_collumn_part"> <!--bottom part of left collumn-->
+                    <div class="buy_now" >
+                        <h1>Buy Now</h1>
+                    </div>
+                    <img class="image_left_collumn" src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_uni_Blue.png" alt="blue unicolor sock photo">
+                    <img class="image_left_collumn" src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_uni_Green.png" alt="green unicolor sock photo">
+                    <img class="image_left_collumn" src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_uni_Pink.png" alt="pink unicolor sock photo">
+                    <img class="image_left_collumn" src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_uni_Red.png" alt="red unicolor sock photo">
+                    <img class="image_left_collumn" src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_uni_Yellow.png" alt="yellow unicolor sock photo">
                 </div>
-                <img class="image_left_collumn" src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_uni_Blue.png" alt="blue unicolor sock photo">
-                <img class="image_left_collumn" src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_uni_Green.png" alt="green unicolor sock photo">
-                <img class="image_left_collumn" src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_uni_Pink.png" alt="pink unicolor sock photo">
-                <img class="image_left_collumn" src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_uni_Red.png" alt="red unicolor sock photo">
-                <img class="image_left_collumn" src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_uni_Yellow.png" alt="yellow unicolor sock photo">
             </div>
-        </div>
-
+        </a>
 
 
 
