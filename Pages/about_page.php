@@ -44,7 +44,7 @@
 
         <div class="mission">
             <h2>Mission</h2>
-            <h3>Sunny's mission is to brighten peoples day by providing high
+            <h3>Sunny's mission is to brighten people's day by providing high
                 quality, ethically produced socks.</h3>
         </div>
         <img src="../src/images_about/mission.jpeg" alt="a scene with colorful houses" class="mission_img">
@@ -52,8 +52,8 @@
         <div class="vision">
             <h2>Vision</h2>
             <h3>Sunny's Vision is to produce ethical and sustainable socks
-                that are available for everybody. To communicate all that
-                Sunny is, in a consistent way, a visual branding is developed</h3>
+                that are available to everybody. To communicate all that
+                Sunny is, in a consistent way, a visual branding is developed.</h3>
         </div>
         <img src="../src/images_about/recycle.png" alt="recycle symbol with the word sunny in the middle" class="recycle_img">
 
