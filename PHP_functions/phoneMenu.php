@@ -1,6 +1,6 @@
 <?php
 echo '
-        <div class = "menu-div">
+        <div class = "menu-div" id ="menuDiv">
             <div class = "menu-rect" id = "menuRect">
                 <svg viewBox="0 0 100 80" width="40" height="40">
                     <rect width="100" height="20"></rect>
@@ -40,6 +40,9 @@ echo '
 
     echo "
         <style>
+            .menu-div {
+                display:none;
+            }
             #phoneMenu{
                 transition:1s;
                 display:flex;

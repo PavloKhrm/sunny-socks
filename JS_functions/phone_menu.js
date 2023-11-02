@@ -2,9 +2,11 @@ function resetMenu() {
     if (window.innerWidth >= 1200) {
         document.getElementById("header").style["display"] = "flex";
         document.getElementById("footer").style["display"] = "flex";
+        document.getElementById("menuDiv").style["display"] = "none";
         document.getElementById("menuRect").style["display"] = "none";
         document.getElementById("phoneMenu").style["display"] = "none";
     }else {
+        document.getElementById("menuDiv").style["display"] = "flex";
         document.getElementById("menuRect").style["display"] = "block";
         document.getElementById("header").style["display"] = "none";
         document.getElementById("footer").style["display"] = "none";
