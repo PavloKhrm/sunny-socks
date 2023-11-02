@@ -15,6 +15,10 @@ require_once("../PHP_functions/footerAndHeader.php");
 <?php
 insertHeader("Cart");
 ?>
+<?php
+    require_once("../PHP_functions/phoneMenu.php");
+?>
+
 <div class="container">
     <div class="contact-info">
         <h1>Need help?</h1>
@@ -75,6 +79,6 @@ insertHeader("Cart");
 <?php
 insertFooter();
 ?>
-
+<script src="../JS_functions/phone_menu.js"></script>
 </body>
 </html>

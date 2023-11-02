@@ -14,25 +14,25 @@ echo '
                 <figure>
                     <a href="../Pages/contact.php">
                     <img class="icon" src="../src/footer_images/contact.png" alt="icon">
-                    <figcaption>Contact us</figcaption>
+                    <figcaption class = "menu-blue">Contact us</figcaption>
                     </a>
                 </figure>
                 <figure>
                     <a href="../Pages/about_page.php">
                     <img class="icon" src="../src/footer_images/info_blue.png" alt="icon">
-                    <figcaption>About us</figcaption>
+                    <figcaption class = "menu-blue">About us</figcaption>
                     </a>
                 </figure>
                 <figure>
                     <a href="../Pages/Catalogue.php">
                         <img class="icon" src="../src/footer_images/socks_pink.png" alt="icon">
-                        <figcaption class = "fig-catalogue" >Catalogue</figcaption>
+                        <figcaption class = "fig-catalogue menu-blue" >Catalogue</figcaption>
                     </a>
                 </figure>
                 <figure class = "cart">
                     <a href="../Pages/cart.php">
                         <img class="icon" src="../src/footer_images/cart.png" alt="icon">
-                        <figcaption class="fig-cart">Cart</figcaption>
+                        <figcaption class="fig-cart menu-blue">Cart</figcaption>
                     </a>
                 </figure>
             </div>
@@ -41,19 +41,32 @@ echo '
     echo "
         <style>
             .menu-div {
+                position:relative;
                 width:100%;
                 height:50px;
+                overflow:hidden;
             }
             .menu-rect {
                 position:absolute;
                 top:0;
                 right:0;  
+                z-index:1000
             }
-
             .phone-menu {
+                position:absolute;
+                top:0;
+                left:0;
+                z-index:999;
+                width:100dvw;
+                height:100dvh;
+                overflow:hidden;
                 display:none;
                 justify-content: center;
                 align-items: center;
+                background-color:white;
+            }
+            .menu-blue {
+                color:#1E407A;
             }
         </style>
     ";

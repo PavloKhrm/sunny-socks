@@ -12,16 +12,16 @@ function resetMenu() {
 }
 resetMenu();
 window.addEventListener("resize", resetMenu);
-function showMenu() {
-}
 let menuIsDisplayed = false;
 function changeMenuDisplay() {
     if (menuIsDisplayed) {
-        document.getElementById("phoneMenu").style["display"] = "flex";
-        menuIsDisplayed = false;
-    } else {
         document.getElementById("phoneMenu").style["display"] = "none";
+        menuIsDisplayed = false;
+        document.body.style["overflow"] = "scroll";
+    } else {
+        document.getElementById("phoneMenu").style["display"] = "flex";
         menuIsDisplayed = true;
+        document.body.style["overflow"] = "hidden";
     }
 }
 document.getElementById("menuRect").addEventListener("click", changeMenuDisplay);
