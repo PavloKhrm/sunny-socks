@@ -15,7 +15,7 @@
         require_once("../PHP_functions/phoneMenu.php");
     ?>
 
-    <div class="page_header">
+    <div class="page_text_top">
         <h class = "page_header_word header_word_blue" >Express</h1>
         <h class = "page_header_word header_word_green" >yourself</h1>
         <h class = "page_header_word header_word_orange" >with</h1>

@@ -1,0 +1,100 @@
+.top_picture_wrap{
+    filter: drop-shadow(0 2mm 3mm rgb(0, 0, 0));
+
+}
+
+.top_picture{
+    width: 100%;
+    object-fit: contain;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 25%, 0% 60%);
+    position: absolute;
+}
+
+.logo_container{
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    width: 100%;
+    
+}
+
+.logo{
+    height: 10vw;
+    object-fit: contain;
+    position: relative;
+
+}
+
+.positioning_top_part{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5,1fr);
+    justify-items: center;
+    height: 45vh;
+}
+
+.brighten_your_day_text{
+    grid-row: 5;
+    color: #FECD3E;
+    font-family: "Nexa Bold";
+    font-size: 50;
+}
+
+.page_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left_collumn_part{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 32vh;
+}
+
+.image_left_collumn{
+    height: 32vh;
+}
+
+.buy_now{
+    position: absolute;
+    height: 32vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: #FECD3E;
+}
+
+.left_collumn_part:hover .buy_now{
+    display: flex;
+}
+
+.recycle_image{
+    height: 1.5em;
+}
+
+.eco_frinedly_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    font-family: "Nexa Light";
+    font-size: 26;
+}
+
+.word_blue{
+    color: #1E407A;
+}
+
+.word_green{
+    color: #51B2A2;
+}
+
+.word_orange{
+    color: #F15B39;
+}
+
+.word_pink{
+    color: #E990B9;
+}
