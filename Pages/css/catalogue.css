@@ -51,10 +51,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 40vw;
+    height: 50vh;
 }
 
 .image_right_collumn{
-    height: 50vh;
-    width: 60vh;
-    object-fit: contain
+    height: inherit;
+    width: inherit;
+    object-fit: contain;
+}
+
+.buy_now{
+    position: absolute;
+    height: 27vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: #FECD3E;
+}
+
+.left_collumn_part:hover .buy_now{
+    display: flex;
 }
