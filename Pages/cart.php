@@ -10,12 +10,52 @@ require_once("../PHP_functions/footerAndHeader.php"); ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
     <link rel="stylesheet" href="./css/cart_style.css">
+    <link rel="stylesheet" href="./css/menu.css">
 </head>
 
 <body>
     <?php
-    insertHeader("Cart");
+        insertHeader("Cart");
     ?>
+    <div class = "menu-div">
+        <div class = "menu-rect" id = "menuRect">
+            <svg viewBox="0 0 100 80" width="40" height="40">
+                <rect width="100" height="20"></rect>
+                <rect y="30" width="100" height="20"></rect>
+                <rect y="60" width="100" height="20"></rect>
+            </svg>
+        </div>
+    </div>
+    <div class="phone-menu" id="phoneMenu">
+    <div class="phone-icons" id="phoneIcons" >
+                <figure>
+                    <a href="../Pages/contact.php">
+                    <img class="icon" src="../src/footer_images/contact.png" alt="icon">
+                    <figcaption>Contact us</figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="../Pages/about_page.php">
+                    <img class="icon" src="../src/footer_images/info_blue.png" alt="icon">
+                    <figcaption>About us</figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="../Pages/Catalogue.php">
+                        <img class="icon" src="../src/footer_images/socks_pink.png" alt="icon">
+                        <figcaption class = "fig-catalogue" >Catalogue</figcaption>
+                    </a>
+                </figure>
+                <figure class = "cart">
+                    <a href="../Pages/cart.php">
+                        <img class="icon" src="../src/footer_images/cart.png" alt="icon">
+                        <figcaption class="fig-cart">Cart</figcaption>
+                    </a>
+                </figure>
+                </div>
+            </div>
+</div>
+    </div>
     <main class="flex">
         <?php
         $totalPrice = 0;
@@ -42,6 +82,36 @@ require_once("../PHP_functions/footerAndHeader.php"); ?>
     <?php
     insertFooter();
     ?>
+    <script>
+        function resetMenu() {
+            if (window.innerWidth >= 1200) {
+                document.getElementById("header").style["display"] = "flex";
+                document.getElementById("footer").style["display"] = "flex";
+                document.getElementById("menuRect").style["display"] = "none";
+                document.getElementById("phoneMenu").style["display"] = "none";
+            }else {
+                document.getElementById("menuRect").style["display"] = "block";
+                document.getElementById("header").style["display"] = "none";
+                document.getElementById("footer").style["display"] = "none";
+            }
+        }
+        resetMenu();
+        window.addEventListener("resize", resetMenu);
+        function showMenu() {
+        }
+        let menuIsDisplayed = false;
+        function changeMenuDisplay() {
+            if (menuIsDisplayed) {
+                document.getElementById("phoneMenu").style["display"] = "flex";
+                menuIsDisplayed = false;
+            } else {
+                document.getElementById("phoneMenu").style["display"] = "none";
+                menuIsDisplayed = true;
+            }
+        }
+        document.getElementById("menuRect").addEventListener("click", changeMenuDisplay);
+    </script>
+    
 
 </body>
 

@@ -95,7 +95,7 @@ function insertHeaderAndFooterStyle() {
         }
         .icons {
             display:flex;
-            gap:100px;
+            gap:5dvw;
             margin-left:200px;
         }
         figure{
@@ -143,7 +143,7 @@ function insertHeaderAndFooterStyle() {
     //header div
     function insertHeader($pageName) {
         echo '
-        <div class="header">
+        <div class="header" id = "header">
             <div class="about">' .$pageName. '</div>
             <div class="logo"> <img class="logo-img" src="../src/Logo/png/sunny_logos_slogan_yellow.png" alt="Sunny_logo"></div>    
         </div>';
@@ -157,7 +157,7 @@ insertHeaderAndFooterStyle(); // insert style automatically after requiring
 //footer insertion
 function insertFooter() {
         echo '
-        <div class="footer">
+        <div class="footer" id="footer">
             <div class="footer-logo"><img class="footer-image-logo" src="../src/Logo/png/sunny_logos_white.png" alt="logo"></div>
             <div class= "footer-navigation">
                 <div class="icons">

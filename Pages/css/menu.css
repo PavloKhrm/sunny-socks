@@ -1,0 +1,16 @@
+.menu-div {
+    width:100%;
+    height:50px;
+}
+.menu-rect {
+    position:absolute;
+    top:0;
+    right:0;  
+}
+
+.phone-menu {
+    display:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
