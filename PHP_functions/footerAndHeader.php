@@ -174,7 +174,7 @@ function insertFooter() {
                     </a>
                 </figure>
                 <figure>
-                    <a href="../Pages/about_page.php">
+                    <a href="../Pages/Catalogue.php">
                         <img class="icon" src="../src/footer_images/socks_pink.png" alt="icon">
                         <figcaption class = "fig-catalogue" >Catalogue</figcaption>
                     </a>
