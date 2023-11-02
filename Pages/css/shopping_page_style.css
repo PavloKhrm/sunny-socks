@@ -11,7 +11,7 @@ main{
 
 main>form{
     display: grid;
-    grid-template-columns: 1fr 3fr 3fr 1fr;
+    grid-template-columns: 1fr 5fr 5fr 1fr;
 }
 
 p{
@@ -98,8 +98,9 @@ label{
     border: solid 1px #1E407A;
     background-color: #1E407A;
     margin-top: 5dvh;
-    height: 5dvh;
-    width: 15dvw;
+    min-height: 5dvh;
+    min-width: 15dvw;
+    height: fit-content;
     border-radius: 0.2rem;
     font-size: larger;
     align-items: center;
