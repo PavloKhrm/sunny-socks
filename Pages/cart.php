@@ -9,7 +9,7 @@ require_once("../PHP_functions/footerAndHeader.php"); ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
-    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="./css/cart_style.css">
 </head>
 
 <body>
@@ -22,7 +22,7 @@ require_once("../PHP_functions/footerAndHeader.php"); ?>
         if (isset($_SESSION["cart"])) {
             foreach ($_SESSION["cart"] as $item) {
                 $itemPrice = $item["quantity"]*3.99;
-                echo "<div class ='flexItem flex' > <img src='../src/sunny_socks_photos/packaging/png/catalogus_sokken_" . $item["style"] . "_" . $item["color"] . ".png' alt='Sock'><h2>Quantity: " . $item['quantity'] . "</h2><h2>Price: " . $itemPrice . "€</h2></div>";
+                echo "<div class ='flex_item flex' > <img src='../src/sunny_socks_photos/packaging/png/catalogus_sokken_" . $item["style"] . "_" . $item["color"] . ".png' alt='Sock'><div><h2>Quantity: " . $item['quantity'] . "</h2><h2>Price: " . $itemPrice . "€</h2></div></div>";
                 $totalPrice += $itemPrice;
             }
         } else {
@@ -33,11 +33,11 @@ require_once("../PHP_functions/footerAndHeader.php"); ?>
         <?php 
             if($totalPrice > 0) {
             echo "<div><h2>Total: " . $totalPrice . "€</h2></div>
-                <a href='../PHP_functions/clearCart.php' class='button clearButton'>Clear Cart</a>";
+                <a href='../PHP_functions/clearCart.php' class='button clear_button'>Clear Cart</a>";
             }
             ?>
         
-       <a href="shopping_page.php" class="button backButton">Go Back</a>
+       <a href="shopping_page.php" class="button back_button">Go Back</a>
     </main>
     <?php
     insertFooter();
