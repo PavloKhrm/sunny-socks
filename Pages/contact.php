@@ -38,17 +38,16 @@ require_once("../PHP_functions/footerAndHeader.php"); ?>
         <div class="contact-form">
             <h1>Contact us</h1>
             
-                <label for="name">Full name:</label>
-                <input type="text" id="name" name="name" required>
+                <p><label for="name">Full name:</label>
+                <input type="text" id="name" name="name" required></p>
 
-                <label for="email">Gmail:</label>
-                <input type="email" id="email" name="email" required>
+                <p><label for="email">Gmail:</label>
+                <input type="email" id="email" name="email" required></p>
 
-               <p>
-                <label for "message">Your question:</label>
-                <textarea id="message" name="message" rows="7" required></textarea>
-               </p> 
-
+               
+                <p><label for "message">Your question:</label>
+                <textarea id="message" name="message" rows="7" required></textarea></p>
+               
                <button class="buttton" id="openModalButton">Submit</button>
                
             
