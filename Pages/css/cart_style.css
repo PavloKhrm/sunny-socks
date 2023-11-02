@@ -2,21 +2,22 @@ body{
     font-family: "Nexa Light", sans-serif;
 }
 
-.flexItem img{
+.flex_item img{
     height: 25dvh;
 }
 
 .flex{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
+    gap: 10px;
 }
 
-.flexItem{
+.flex_item{
     flex-direction: row;
     border: solid thick darkblue;
-    margin: 5px;
     min-width: 80%;
 }
 
@@ -26,14 +27,17 @@ body{
     padding: 5px;
     border-radius: 0.2rem;
     margin: 1dvh;
+    min-width: fit-content;
+    width: 5dvw;
+    text-align: center;
 }
 
-.clearButton{
+.clear_button{
     background-color: #f15b39;
     border: 1px solid #f15b39;
 }
 
-.backButton{
+.back_button{
     background-color: #1E407A;
     border: 1px solid #1E407A;
 }

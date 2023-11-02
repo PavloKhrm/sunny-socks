@@ -19,7 +19,7 @@ p{
     margin: 0;
 }
 
-img{
+.style_icon{
     height: 10dvh;
 }
 
@@ -78,7 +78,7 @@ input[type="radio"]{
     display: none;
 
     &:checked + label{
-        border: solid thin black;
+        border: solid thin #1E407A;
     }
 }
 
@@ -86,10 +86,6 @@ input[type="radio"]{
 label{
     cursor: pointer;
     border: solid thin transparent;
-}
-
-#mainImg {
-    transition:all 600ms;
 }
 
 .button{
@@ -108,16 +104,16 @@ label{
     justify-content: center;
 }
 
-.bolLogo{
+.bol_logo{
     height: 10dvh;
     margin-left: 1dvw;
 }
 
-.hemaLogo{
+.hema_logo{
     height: 10dvh;
     margin-right: 2dvw;
 }
 
-.flexLogos{
+.flex_logos{
     justify-content: center;
 }
