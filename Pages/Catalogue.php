@@ -52,8 +52,8 @@
 
 
 
-        <div class="right_collumn">
-            <img class="image_right_collumn" src="../src/images_catalogue/sneaker_with_yellow_sock.png" alt="">
+        <div class="right_collumn" id ="rightColumn">
+            <img class="image_right_collumn" src="../src/images_catalogue/sneaker_with_yellow_sock.png" alt="" id ="yellowSneaker">
         </div>   
     </div>
 
