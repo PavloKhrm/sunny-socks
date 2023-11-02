@@ -162,7 +162,7 @@ function insertFooter() {
             <div class= "footer-navigation">
                 <div class="icons">
                 <figure>
-                    <a href="../Pages/contact_form.php">
+                    <a href="../Pages/contact.php">
                     <img class="icon" src="../src/footer_images/contact.png" alt="icon">
                     <figcaption>Contact us</figcaption>
                     </a>
