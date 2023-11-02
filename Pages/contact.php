@@ -44,7 +44,7 @@ require_once("../PHP_functions/footerAndHeader.php"); ?>
                 <label for="email">Gmail:</label>
                 <input type="email" id="email" name="email" required>
 
-               <p><label for "message">Your question:</label>
+               <p><label for="message">Your question:</label>
                 <textarea id="message" name="message" rows="7" required></textarea></p> 
 
                 <button type="submit">Send</button>
@@ -64,7 +64,5 @@ require_once("../PHP_functions/footerAndHeader.php"); ?>
      <?php
     insertFooter();
     ?>
-    
-    <?php require_once("../PHP_functions/footer.php"); ?>
 </body>
 </html>
