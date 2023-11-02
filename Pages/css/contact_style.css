@@ -9,7 +9,7 @@ body {
   grid-gap: 20px;
   margin: 10px;
   padding: 0px;  
-  padding-left: 100px;
+  padding-left: 20vh;
   justify-content: center; 
   align-items: center; 
   }
@@ -29,15 +29,15 @@ body {
   .contact-info-p {
     text-align: center;
     color: #1E407A;
-    font-size: 30;
+    font-size: 22;
 }
   
   .contact-form {
     grid-column: 2; 
     background-color: white;
-    padding-left: 70px; 
-    padding-right: 30px;
-   padding-bottom: 10px;
+    padding-left: 10vh; 
+    padding-right: 5vh;
+   padding-bottom: 2vh;
     border-radius: 5px;
     color: #1E407A;
     border: 9px solid #FECD3E;
@@ -112,7 +112,6 @@ button {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -149,5 +148,3 @@ button {
     font-size: 30px;
     cursor: pointer;
 }
-
-

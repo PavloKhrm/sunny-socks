@@ -1,0 +1,43 @@
+body{
+    font-family: "Nexa Light", sans-serif;
+}
+
+.flexItem img{
+    height: 25dvh;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.flexItem{
+    flex-direction: row;
+    border: solid thick darkblue;
+    margin: 5px;
+    min-width: 80%;
+}
+
+.button{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border-radius: 0.2rem;
+    margin: 1dvh;
+}
+
+.clearButton{
+    background-color: #f15b39;
+    border: 1px solid #f15b39;
+}
+
+.backButton{
+    background-color: #1E407A;
+    border: 1px solid #1E407A;
+}
+main{
+    margin: 1dvh;
+    min-height: 70dvh;
+}

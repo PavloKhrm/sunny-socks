@@ -1,14 +1,18 @@
+<?php
+session_start();
+require_once("../PHP_functions/footerAndHeader.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/contact_form_stlyle.css">
+    <link rel="stylesheet" href="./css/contact_style.css">
     <title>Контакты</title>
 </head>
 <body>
-    <?php require_once("../PHP_functions/header.php"); ?>
-
+<?php
+    insertHeader("Cart");
+    ?>
     <div class="container">
         <div class="contact-info">
             <h1>Need help?</h1>
@@ -24,7 +28,7 @@
                 <img src="../src/images_contact_page/instagram-logo.png" alt="Instagram" width="32" height="32">
                 <a href="https://www.instagram.com/yourpage">&nbsp;Sunny.Socks</a>
             </p>
-            <br>
+            
             <p class="contact-info-p">
                 Just fill in a contact form
                 and our customer service
@@ -32,7 +36,7 @@
             </p>
         </div>
         <div class="contact-form">
-            <h2>Contact us</h2>
+            <h1>Contact us</h1>
             
                 <label for="name">Full name:</label>
                 <input type="text" id="name" name="name" required>
@@ -60,6 +64,9 @@
     </div>
      <script src="script.js"></script>
 
-    <?php require_once("../PHP_functions/footer.php"); ?>
+     <?php
+    insertFooter();
+    ?>
+    
 </body>
 </html>

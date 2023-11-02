@@ -1,0 +1,111 @@
+@font-face {
+    font-family: "Nexa Bold";
+    src: url(../src/fonts/Nexa\ Bold.otf);
+}
+
+@font-face {
+    font-family: "Nexa Light";
+    src: url(../src/fonts/Nexa\ Light.otf);
+}
+
+.about_info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr), 2rem;
+    justify-content: space-between;
+    margin: 3rem 9rem 3rem 9rem;
+    font-family: "Nexa Bold", sans-serif;
+    font-size: 2rem;
+}
+
+.branding{
+    grid-row-start: 1;
+    grid-column-start: 1;
+    color: #1e407a;
+}
+
+.branding_img{
+    grid-row-start: 1;
+    grid-column-start: 2;
+    width: 25rem;
+    height: 25rem;
+    position: relative;
+    left: 4rem;
+    border-radius: 50%; /* adjusts corners to 50% to round the image to a circle */
+}
+
+.colorful{
+    grid-row-start: 2;
+    grid-column-start: 2;
+    color: #f15b39;
+}
+
+.colorful_img{
+    grid-row-start: 2;
+    grid-column-start: 1;
+    width: 25rem;
+    height: 25rem;
+    
+}
+
+.brand_values{
+    grid-row-start: 3;
+    grid-column-start: 1;
+    color: #51b2a2;
+}
+
+.brand_values_img{
+    grid-row-start: 3;
+    grid-column-start: 2;
+    width: 34rem;
+    height: 22rem;
+    
+}
+
+.mission{
+    grid-row-start: 4;
+    grid-column-start: 2;
+    color: #fecd3e;
+}
+
+.mission_img{
+    grid-row-start: 4;
+    grid-column-start: 1;
+    width: 21rem;
+    height: 21rem;
+    
+}
+
+.vision{
+    grid-row-start: 5;
+    grid-column-start: 1;
+    color: #e990b9;
+}
+
+.recycle_img{
+    grid-row-start: 5;
+    grid-column-start: 2;
+    width: 33rem;
+    height: 30rem;
+    
+}
+
+/*All styling and positioning for the back button*/
+
+.back_container{
+    grid-column-start: 2;
+    grid-row-start: 6;
+    justify-self: end;
+}
+
+.back_button:link{
+    text-decoration: none;
+    font-family: "Nexa Bold", sans-serif;
+    color: #fecd3e;
+}
+
+.back_button:visited{
+    color: #fecd3e;
+    position: relative;
+    left: 30rem;
+}
