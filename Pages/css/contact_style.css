@@ -148,3 +148,8 @@ button {
     font-size: 30px;
     cursor: pointer;
 }
+
+.smallp{
+margin-top: 0.5em; /* Отступ сверху */
+margin-bottom: 0.5em;
+}
