@@ -148,10 +148,12 @@
         console.log("Current style:" + styleItem);
         console.log(changingImage);
         changingImage.addEventListener("mouseover", () => {
-            console.log("mouseover")
+            changingImage.src =  "../src/sunny_socks_photos/catalogus/Sunny_socks_" + styleItem + "_" + colorItem + ".jpg";
+            changingImage.style["height"] = "45vh";
         });
         changingImage.addEventListener("mouseleave", () => {
-            console.log("mouseleave")
+            changingImage.style.height = "45vh";
+            changingImage.src = "../src/sunny_socks_photos/packaging/png/catalogus_sokken_" + styleItem + "_" +colorItem + ".png"
         });
 
 
