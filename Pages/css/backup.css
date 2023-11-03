@@ -105,7 +105,7 @@
     justify-content: center;
 }
 
-.right_collumn_background{
+ .right_collumn_background{            /*four different colours of background, therefore using collumns*/
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     height: 35vh;
@@ -140,7 +140,7 @@
     text-align: center;
     font-size: 16;
     font-family: "Nexa Light";
-    margin-top: 8vh;
+    margin-top: 8vh;                                /*the texts overlaped and since this file is only emergency backup, this solution is suficient, in case of deploying it, the aligment should be fixed*/
     height: 30vh;
     width: 28vw;
 }
