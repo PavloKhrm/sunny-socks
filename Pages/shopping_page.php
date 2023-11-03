@@ -7,7 +7,7 @@
     }
 
     if(!isset($_GET["colorItem"])){ //check if colorItem variable was submitted
-        $colorItem = "red";
+        $colorItem = "Red";
     }
     
     if (isset($_GET["buyItem"])) {  //check if buyItem variable was submitted
