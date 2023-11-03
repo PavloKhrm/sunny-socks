@@ -73,6 +73,7 @@
     <script src="../JS_functions/phone_menu.js"></script>
     <script>
         currentPage = "backUp";
+        document.getElementById("header").style.display = "none";
     </script>
 </body>
 </html>
