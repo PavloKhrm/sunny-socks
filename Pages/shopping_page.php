@@ -1,15 +1,24 @@
+<script>
+    let colorItem = "Red";
+    let styleItem = "uni";
+</script>
 <?php 
     session_start();
     require_once("../PHP_functions/footerAndHeader.php"); 
 
     if(!isset($_GET["styleItem"])){ //check if styleItem variable was submitted
         $styleItem = "uni";
+    } else {
+        $jsStyle = $_GET['styleItem'];
+        echo "<script>styleItem = '$jsStyle';</script>";   
     }
 
     if(!isset($_GET["colorItem"])){ //check if colorItem variable was submitted
         $colorItem = "Red";
+    } else {
+        $jsColor = $_GET['colorItem'];
+        echo "<script>colorItem = '$jsColor';</script>";   
     }
-    
     if (isset($_GET["buyItem"])) {  //check if buyItem variable was submitted
         
         $buyItem = $_GET["buyItem"];
@@ -29,8 +38,10 @@
                     "style" => $_GET["styleItem"],
                     "quantity" => 1
                 ];
+                echo $item;
         
                 $_SESSION["cart"][$buyItem] = $item;
+
             }
         }
         else{
@@ -128,8 +139,23 @@
         </form>
     </main>
     <script src="../JS_functions/shopping_page.js"></script>
-    <?php insertFooter(); ?>
+    <?php insertFooter(); 
+        ?>
     <script src="../JS_functions/phone_menu.js"></script>
+
+    <script>
+        console.log("Current color:" + colorItem);
+        console.log("Current style:" + styleItem);
+        console.log(changingImage);
+        changingImage.addEventListener("mouseover", () => {
+            console.log("mouseover")
+        });
+        changingImage.addEventListener("mouseleave", () => {
+            console.log("mouseleave")
+        });
+
+
+    </script>
 </body>
 
 </html>
