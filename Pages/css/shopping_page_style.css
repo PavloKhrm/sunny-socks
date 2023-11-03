@@ -57,6 +57,7 @@ h2{
     height: 45dvh;
     width: 40dvw;
     align-items: center;
+    justify-content: center;
 }
 
 .product img{
