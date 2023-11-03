@@ -97,8 +97,10 @@
         <form action="./shopping_page.php" method="post">
             <div class="item column_left">
                 <h2>100% cotton</h2>
-                <img src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_<?php echo $styleItem . '_' . $colorItem; ?>.png" alt="Sock"
-                    class="product" id="mainImg">
+                <div class="product">
+                    <img src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_<?php echo $styleItem . '_' . $colorItem; ?>.png" alt="Sock"
+                         id="mainImg">
+                </div>
                 <div class="flex flex_logos">
                     <a target ="_blank" href="https://www.hema.nl"><img src="../src/Logo/png/hema-logo-png-transparent.png" alt="Hema Logo" class="hema_logo"></a>
                     <h2 class="no_top_margin">3.99€</h2>
