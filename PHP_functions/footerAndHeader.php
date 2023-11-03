@@ -4,7 +4,11 @@
         echo '
         <div class="header" id = "header">
             <div class="about">' .$pageName. '</div>
-            <div class="logo"> <a href="./backup.php"> <img class="logo-img" src="../src/Logo/png/sunny_logos_slogan_yellow.png" alt="Sunny_logo"></a></div>    
+            <div class="logo"> 
+                <a href="./backup.php">
+                    <img class="logo-img" src="../src/Logo/png/sunny_logos_slogan_yellow.png" alt="Sunny_logo">
+                </a>
+            </div>    
         </div>';
     }
 ?>

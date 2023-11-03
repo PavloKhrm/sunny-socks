@@ -1,4 +1,5 @@
 <?php
+//insert phone menu HTML
 echo '
         <div class = "menu-div" id ="menuDiv">
             <div class = "menu-rect" id = "menuRect">
