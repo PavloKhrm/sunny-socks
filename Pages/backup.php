@@ -49,13 +49,13 @@
                 <h class = "word_blue" >one</h>
                 <h class = "word_green" >hundred</h>
                 <h class = "word_orange" >percent</h>
-                <h class = "word_pink" >eco-frinedly</h>
+                <h class = "word_pink" >eco-friendly</h>
             </div>
         </div>
 
         <div class="right_collumn">
             <h1 class="principles_heading">The main principle of our business</h1>
-            <h2 class="principles_text"> We like win-win situations. When we produce and sell our socks it is beneficial for everyone involved. The sells person has a nice job. The raw materials are gained in such a way it does not harm the earth. The production is done with the environment in mind and with an honest wage for the people working in the factories.
+            <h2 class="principles_text"> We like win-win situations. When we produce and sell our socks it is beneficial for everyone involved. The sales person has a nice job. The raw materials are gained in such a way it does not harm the earth. The production is done with the environment in mind and with an honest wage for the people working in the factories.
             </h2>
             <div class="right_collumn_background">
                 <div class="background_color_blue"> </div>
