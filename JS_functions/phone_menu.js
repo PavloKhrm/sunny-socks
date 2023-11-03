@@ -5,9 +5,11 @@ function resetMenu() {
         document.getElementById("menuDiv").style["display"] = "none";
         document.getElementById("menuRect").style["display"] = "none";
         document.getElementById("phoneMenu").style["display"] = "none";
+        
     }else {
         document.getElementById("menuDiv").style["display"] = "flex";
         document.getElementById("menuRect").style["display"] = "block";
+        document.getElementById("phoneMenu").style["display"] = "flex";
         document.getElementById("header").style["display"] = "none";
         document.getElementById("footer").style["display"] = "none";
     }
