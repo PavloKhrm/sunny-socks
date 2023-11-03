@@ -53,10 +53,11 @@ h2{
 }
 
 .product{
-    height: 45dvh;
+    min-height: 25dvh;
+    max-height: 45dvh;
     max-width: 40dvw;
     object-fit: cover;
-    object-position: 55% 0;
+    object-position: 58% 0; 
 }
 
 #price{

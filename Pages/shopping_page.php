@@ -1,10 +1,14 @@
+<?php 
+    session_start();
+    require_once("../PHP_functions/footerAndHeader.php"); 
+?>
+
 <script>
     let colorItem = "Red";
     let styleItem = "uni";
 </script>
-<?php 
-    session_start();
-    require_once("../PHP_functions/footerAndHeader.php"); 
+
+<?php
 
     if(!isset($_GET["styleItem"])){ //check if styleItem variable was submitted
         $styleItem = "uni";
