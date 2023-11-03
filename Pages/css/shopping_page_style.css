@@ -54,6 +54,9 @@ h2{
 
 .product{
     height: 45dvh;
+    max-width: 40dvw;
+    object-fit: cover;
+    object-position: 55% 0;
 }
 
 #price{
