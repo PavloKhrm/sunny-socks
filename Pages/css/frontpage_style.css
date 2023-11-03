@@ -21,3 +21,16 @@ header::after {
     background-color: #0074d9; /* Background color matching the header */
     border-radius: 0 0 50% 50%;
 }
+
+.top_text{
+    display: grid;
+    place-content: center;
+    color: #FECD3E;
+    font-family: "Nexa Bold";
+    font-size: large;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}

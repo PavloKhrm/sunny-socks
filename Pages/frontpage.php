@@ -9,17 +9,22 @@
     <title>Home</title>
     <link rel="stylesheet" href="./css/frontpage_style.css" type="text/css">
 </head>
+
 <body>
     <header>
-    <?php
-    $imagePath = './src/images_catalogue/sneaker_with_yellow_sock.png'; 
-    header("Content-type: image/png");
-    readfile($imagePath);
-    ?>
-
         <div class="curve"></div>
-        <img src="header-image.php" alt="Header Image">
+        <img src="../src/images_catalogue/sneaker_with_yellow_sock.png" alt="Header Image">
     </header>
+    
+    <div class="top_text">
+        <h1 class="byd_text">brighten your day</h1>
+    </div>
+
+    <div class="content">
+        <div class="catalogue"></div>
+        <div class="principle"></div>
+
+    </div>
     
     <?php
     insertFooter(); //insert footer from external file
