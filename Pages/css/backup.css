@@ -43,6 +43,7 @@
 .page_content{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-content: center;
 }
 
 .left_collumn_part{
@@ -97,4 +98,49 @@
 
 .word_pink{
     color: #E990B9;
+}
+
+.right_collumn{
+    display: flex;
+    justify-content: center;
+}
+
+.right_collumn_background{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 35vh;
+    width: 30vw;
+}
+.background_color_blue{
+    background-color:#1E407A;
+}
+
+.background_color_green{
+    background-color:#51B2A2;
+}
+
+.background_color_pink{
+    background-color:#E990B9;
+}
+
+.background_color_red{
+    background-color:#F15B39;
+}
+
+.principles_heading{
+    color: white;
+    position: absolute;
+    font-size: 26;
+    font-family: "Nexa Light";
+}
+
+.principles_text{
+    color: white;
+    position: absolute;
+    text-align: center;
+    font-size: 16;
+    font-family: "Nexa Light";
+    margin-top: 8vh;
+    height: 30vh;
+    width: 28vw;
 }
