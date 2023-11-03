@@ -65,7 +65,6 @@
     <script src="../JS_functions/phone_menu.js"></script>
     <script>
         currentPage = "catalogue";
-        console.log(window.innerWidth)
         if (window.innerWidth < 1200) {
             document.getElementById("rightColumn").style.display = "none";
         }

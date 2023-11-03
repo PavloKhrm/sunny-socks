@@ -11,6 +11,9 @@ echo '
         </div>
         <div class="phone-menu" id="phoneMenu">
             <div class="phone-icons" id="phoneIcons" >
+                <a href="./backup.php">
+                    <img class="phone-logo-img" src="../src/Logo/png/sunny_logos_slogan_yellow.png" alt="Sunny_logo">
+                </a>
                 <figure>
                     <a href="../Pages/contact.php">
                     <img class="icon" src="../src/footer_images/contact.png" alt="icon">

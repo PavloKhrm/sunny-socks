@@ -36,3 +36,16 @@
 .menu-blue {
     color:#1E407A;
 }
+.phone-icons {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    height:500px;
+}
+.phone-logo-img {
+    max-width:400px;
+    width:100%;
+    min-width:200px;
+}
