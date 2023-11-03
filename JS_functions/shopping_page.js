@@ -19,7 +19,7 @@ function changeStyle(selectedStyle) {
     changeImage();
 }
 
-// IMPORTANT NOTE: this partof code is functional
+// IMPORTANT NOTE: this part of code is functional
 
 // changes image src on hover
 changingImage.addEventListener("mouseover", () => {
