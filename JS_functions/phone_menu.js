@@ -1,6 +1,10 @@
 let currentPage;
+
 function resetMenu() {
-    if (currentPage = "backUp") document.getElementById("header").style["display"] = "none"
+    if (currentPage == "backUp"){
+        document.getElementById("header").style["display"] = "none";
+        console.log("header display ; none");
+    } 
 
     if (window.innerWidth >= 1200) {
         if (currentPage != "backUp") {
