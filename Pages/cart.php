@@ -25,10 +25,16 @@ require_once("../PHP_functions/footerAndHeader.php"); ?>
     <main class="flex">
         <?php
         $totalPrice = 0;
-        if (isset($_SESSION["cart"])) {
-            foreach ($_SESSION["cart"] as $item) {
+        if (isset($_SESSION["cart"])) { //check if cart has items
+            foreach ($_SESSION["cart"] as $item) {  //display each item in cart
                 $itemPrice = $item["quantity"]*3.99;
-                echo "<div class ='flex_item flex' > <img src='../src/sunny_socks_photos/packaging/png/catalogus_sokken_" . $item["style"] . "_" . $item["color"] . ".png' alt='Sock'><div><h2>Quantity: " . $item['quantity'] . "</h2><h2>Price: " . $itemPrice . "€</h2></div></div>";
+                echo "<div class ='flex_item flex' > 
+                        <img src='../src/sunny_socks_photos/packaging/png/catalogus_sokken_" . $item["style"] . "_" . $item["color"] . ".png' alt='Sock'>
+                        <div>
+                            <h2>Quantity: " . $item['quantity'] . "</h2>
+                            <h2>Price: " . $itemPrice . "€</h2>
+                            </div>
+                        </div>";
                 $totalPrice += $itemPrice;
             }
         } else {
@@ -43,7 +49,7 @@ require_once("../PHP_functions/footerAndHeader.php"); ?>
             }
             ?>
         
-       <a href="shopping_page.php" class="button back_button">Go Back</a>
+       <a href="./shopping_page.php" class="button back_button">Go Back</a>
     </main>
     <?php
     insertFooter();

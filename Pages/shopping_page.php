@@ -2,23 +2,23 @@
     session_start();
     require_once("../PHP_functions/footerAndHeader.php"); 
 
-    if(!isset($_GET["styleItem"])){
+    if(!isset($_GET["styleItem"])){ //check if styleItem variable was submitted
         $styleItem = "uni";
     }
 
-    if(!isset($_GET["colorItem"])){
+    if(!isset($_GET["colorItem"])){ //check if colorItem variable was submitted
         $colorItem = "red";
     }
     
-    if (isset($_GET["buyItem"])) {
+    if (isset($_GET["buyItem"])) {  //check if buyItem variable was submitted
         
         $buyItem = $_GET["buyItem"];
 
-        if (!empty($_SESSION["cart"])){
+        if (!empty($_SESSION["cart"])){ //check if cart session is not empty
 
             $cartArray = array_column($_SESSION["cart"], "buyItem");
 
-            if (in_array($buyItem, $cartArray)){
+            if (in_array($buyItem, $cartArray)){    //check if item already exists in cart
 
                 $_SESSION["cart"][$buyItem]["quantity"] += 1;
             }
@@ -100,7 +100,7 @@
                     foreach ($styles as $style) {
 
                         echo '<div class="item">
-                                    <input type="radio" name="style" id="' . $style . '" value="' . $style . '" onclick="changeStyle(\''.$style.'\'); location.href=\'shopping_page.php?styleItem=' . $style . '&colorItem=' . $colorItem . '\'">
+                                    <input type="radio" name="style" id="' . $style . '" value="' . $style . '" onclick="changeStyle(\''.$style.'\'); location.href=\'./shopping_page.php?styleItem=' . $style . '&colorItem=' . $colorItem . '\'">
                                     <label for="' . $style . '" class="item">
                                         <img src="../src/sunny_socks_photos/packaging/png/catalogus_sokken_' . $style . '_Red.png" alt="'.$style.' Sock" class="style_icon">
                                         <p>' . $style . '</p>
@@ -114,7 +114,7 @@
                     <?php
                     $colors = ["Red", "Pink", "Yellow", "Green", "Blue"];
                     foreach ($colors as $color) {
-                        echo '<input type="radio" name="colorSock" id="color' . $color . '" value="' . $color . '" onclick="changeColor(\''.$color.'\'); location.href=\'shopping_page.php?styleItem=' . $styleItem . '&colorItem=' . $color . '\'">
+                        echo '<input type="radio" name="colorSock" id="color' . $color . '" value="' . $color . '" onclick="changeColor(\''.$color.'\'); location.href=\'./shopping_page.php?styleItem=' . $styleItem . '&colorItem=' . $color . '\'">
                                 <label for="color' . $color . '">
                                     <img src="../src/sunny_illustrations/png/Sunny_socks_' . $color . '.png" alt="' . $color . ' Illustration" class="illustration">
                                     
@@ -123,7 +123,7 @@
                     ?>
                 </div>
 
-                <a href="shopping_page.php?styleItem=<?php echo $styleItem . '&colorItem=' . $colorItem . '&buyItem='.$styleItem . $colorItem?>" class="button">Add to cart</a>
+                <a href="./shopping_page.php?styleItem=<?php echo $styleItem . '&colorItem=' . $colorItem . '&buyItem='.$styleItem . $colorItem?>" class="button">Add to cart</a>
             </div>
         </form>
     </main>

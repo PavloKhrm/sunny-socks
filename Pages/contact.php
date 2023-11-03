@@ -9,13 +9,17 @@ require_once("../PHP_functions/footerAndHeader.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/contact_style.css">
+<<<<<<< HEAD
     <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/footerAndHeader.css">
     <title>Contact us</title>
+=======
+    <title>Contact Us</title>
+>>>>>>> 9c0abc786fa2a1826fc2531fc1555ca02d3e9c36
 </head>
 <body>
 <?php
-insertHeader("Cart");
+insertHeader("Contact Us");
 ?>
 <?php
     require_once("../PHP_functions/phoneMenu.php");
