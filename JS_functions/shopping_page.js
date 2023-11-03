@@ -19,3 +19,12 @@ function changeStyle(selectedStyle) {
     changeImage();
 }
 
+// IMPORTANT NOTE: this partof code is functional
+
+// changes image src on hover
+changingImage.addEventListener("mouseover", () => {
+    changingImage.src =  "../src/sunny_socks_photos/catalogus/Sunny_socks_" + styleItem + "_" + colorItem + ".jpg";
+});
+changingImage.addEventListener("mouseleave", () => {
+    changingImage.src = "../src/sunny_socks_photos/packaging/png/catalogus_sokken_" + styleItem + "_" +colorItem + ".png"
+});
