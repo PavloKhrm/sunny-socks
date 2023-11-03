@@ -155,7 +155,7 @@ margin-top: 0.5em;
 margin-bottom: 0.5em;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1580px) {
   .container {
       display: flex;
       flex-direction: column; 
