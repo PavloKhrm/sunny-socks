@@ -42,7 +42,6 @@
                     "style" => $_GET["styleItem"],
                     "quantity" => 1
                 ];
-                echo $item;
         
                 $_SESSION["cart"][$buyItem] = $item;
 
