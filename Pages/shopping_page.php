@@ -2,23 +2,23 @@
     session_start();
     require_once("../PHP_functions/footerAndHeader.php"); 
 
-    if(!isset($_GET["styleItem"])){
+    if(!isset($_GET["styleItem"])){ //check if styleItem variable was submitted
         $styleItem = "uni";
     }
 
-    if(!isset($_GET["colorItem"])){
+    if(!isset($_GET["colorItem"])){ //check if colorItem variable was submitted
         $colorItem = "red";
     }
     
-    if (isset($_GET["buyItem"])) {
+    if (isset($_GET["buyItem"])) {  //check if buyItem variable was submitted
         
         $buyItem = $_GET["buyItem"];
 
-        if (!empty($_SESSION["cart"])){
+        if (!empty($_SESSION["cart"])){ //check if cart session is not empty
 
             $cartArray = array_column($_SESSION["cart"], "buyItem");
 
-            if (in_array($buyItem, $cartArray)){
+            if (in_array($buyItem, $cartArray)){    //check if item already exists in cart
 
                 $_SESSION["cart"][$buyItem]["quantity"] += 1;
             }
