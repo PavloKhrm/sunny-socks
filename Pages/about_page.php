@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>About Us</title>
-    <link rel="stylesheet" href="./css//about_page_style.css" type="text/css">
+    <link rel="stylesheet" href="./css/about_page_style.css" type="text/css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/footerAndHeader.css">
 </head>
 <body>
     <!--- Id for where the "go back" button takes the user --->

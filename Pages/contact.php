@@ -9,7 +9,9 @@ require_once("../PHP_functions/footerAndHeader.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/contact_style.css">
-    <title>Контакты</title>
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/footerAndHeader.css">
+    <title>Contact us</title>
 </head>
 <body>
 <?php

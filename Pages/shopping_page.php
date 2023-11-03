@@ -65,6 +65,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping</title>
     <link rel="stylesheet" href="./css/shopping_page_style.css" type="text/css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/footerAndHeader.css">
 </head>
 
 <body>

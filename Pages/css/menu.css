@@ -1,0 +1,38 @@
+.menu-div {
+    z-index:1001;
+    display:none;
+    justify-content:flex-end;
+    align-items:center;
+    background-color:#1E407A;
+}
+#phoneMenu{
+    transition:1s;
+    display:flex;
+    width:0;
+}
+.menu-div {
+    position:relative;
+    width:100%;
+    height:50px;
+    overflow:hidden;
+}
+.menu-rect {
+    margin:0 10px;
+    z-index:1000;
+}
+.phone-menu {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:999;
+    width:100dvw;
+    height:100dvh;
+    overflow:hidden;
+    display:none;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+}
+.menu-blue {
+    color:#1E407A;
+}

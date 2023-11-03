@@ -11,6 +11,7 @@ require_once("../PHP_functions/footerAndHeader.php"); ?>
     <title>Cart</title>
     <link rel="stylesheet" href="./css/cart_style.css">
     <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/footerAndHeader.css">
 </head>
 
 <body>
