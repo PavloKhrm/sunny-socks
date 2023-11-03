@@ -96,7 +96,7 @@ button {
     margin-bottom: 10px;
 }
 
-/* styles.css */
+
 .modal {
     display: none;
     position: fixed;
@@ -106,7 +106,7 @@ button {
     width: 40vh;
     height: 20vh;
     background-color: #fff;
-    border: 8px solid #FECD3E; /* Увеличиваем ширину обводки до 8 пикселей */
+    border: 8px solid #FECD3E; 
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     display: flex;
@@ -151,6 +151,31 @@ button {
 }
 
 .smallp{
-margin-top: 0.5em; /* Отступ сверху */
+margin-top: 0.5em; 
 margin-bottom: 0.5em;
 }
+
+@media (max-width: 1400px) {
+  .container {
+      display: flex;
+      flex-direction: column; 
+      height: 90vh;
+      margin-top: 15vh;
+      margin-bottom: 15vh;
+      z-index: 1;
+  }
+  .contact-info {
+      max-width: 45vh;
+      
+      margin: 0;
+      padding: 20px;
+  }
+  .contact-form {
+    max-width: 50vh;
+    
+    margin-left: 0;
+    padding: 20px; 
+  }
+}
+
+  
