@@ -109,7 +109,7 @@
 }
 
 /*Phone sizes below*/
-@media (max-width: 1200px){ /*Checks screen size and executes style below if smaller than 600px*/
+@media (max-width: 1200px){ /*Checks screen size and executes style below if smaller than 1200px*/
     .about_info{
         display: flex;
         flex-direction: column;
