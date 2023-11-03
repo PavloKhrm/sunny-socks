@@ -9,11 +9,11 @@ require_once("../PHP_functions/footerAndHeader.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/contact_style.css">
-    <title>Контакты</title>
+    <title>Contact Us</title>
 </head>
 <body>
 <?php
-insertHeader("Cart");
+insertHeader("Contact Us");
 ?>
 <?php
     require_once("../PHP_functions/phoneMenu.php");
