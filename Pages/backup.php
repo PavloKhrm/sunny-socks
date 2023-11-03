@@ -10,11 +10,18 @@
     <link rel="stylesheet" href="./css/footerAndHeader.css">
 </head>
 <body>
-    <div class="top_picture_wrap">
+    <?php 
+        insertHeader("About Us"); 
+    ?>
+    <?php
+        require_once("../PHP_functions/phoneMenu.php");
+    ?>
+  
+    <div class="top_picture_wrap" id ="topPic">
         <img class="top_picture" src="../src/images_backup/Backup1.png" alt="top picture">
     </div>
 
-    <div class="logo_container">
+    <div class="logo_container" id="backUpLogo">
         <img class="logo" src="../src/Logo/png/sunny_logos_slogan_yellow.png" alt="logo">
     </div>
 
@@ -62,5 +69,10 @@
     <?php
     insertFooter(); //insert footer from external file
     ?>
+
+    <script src="../JS_functions/phone_menu.js"></script>
+    <script>
+        currentPage = "backUp";
+    </script>
 </body>
 </html>

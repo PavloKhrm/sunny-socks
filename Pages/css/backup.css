@@ -12,17 +12,15 @@
 
 .logo_container{
     display: flex;
+    position: relative;    
     justify-content: flex-end;
-    position: absolute;
     width: 100%;
-    
 }
 
 .logo{
     height: 10vw;
+    position: absolute;
     object-fit: contain;
-    position: relative;
-
 }
 
 .positioning_top_part{
@@ -143,4 +141,7 @@
     margin-top: 8vh;                                /*the texts overlaped and since this file is only emergency backup, this solution is suficient, in case of deploying it, the aligment should be fixed*/
     height: 30vh;
     width: 28vw;
+}
+#header {
+    display:none;
 }
