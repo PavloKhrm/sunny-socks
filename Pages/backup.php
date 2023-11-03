@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sunny Socks</title>
     <link rel="stylesheet" href="./css/backup.css">
     <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/footerAndHeader.css">
