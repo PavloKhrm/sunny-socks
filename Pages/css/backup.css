@@ -1,0 +1,146 @@
+.top_picture_wrap{
+    filter: drop-shadow(0 2mm 3mm rgb(0, 0, 0));
+
+}
+
+.top_picture{
+    width: 100%;
+    object-fit: contain;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 25%, 0% 60%);
+    position: absolute;
+}
+
+.logo_container{
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    width: 100%;
+    
+}
+
+.logo{
+    height: 10vw;
+    object-fit: contain;
+    position: relative;
+
+}
+
+.positioning_top_part{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5,1fr);
+    justify-items: center;
+    height: 45vh;
+}
+
+.brighten_your_day_text{
+    grid-row: 5;
+    color: #FECD3E;
+    font-family: "Nexa Bold";
+    font-size: 50;
+}
+
+.page_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+.left_collumn_part{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 32vh;
+}
+
+.image_left_collumn{
+    height: 32vh;
+}
+
+.buy_now{
+    position: absolute;
+    height: 32vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: #FECD3E;
+}
+
+.left_collumn_part:hover .buy_now{
+    display: flex;
+}
+
+.recycle_image{
+    height: 1.5em;
+}
+
+.eco_frinedly_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    font-family: "Nexa Light";
+    font-size: 26;
+}
+
+.word_blue{
+    color: #1E407A;
+}
+
+.word_green{
+    color: #51B2A2;
+}
+
+.word_orange{
+    color: #F15B39;
+}
+
+.word_pink{
+    color: #E990B9;
+}
+
+.right_collumn{
+    display: flex;
+    justify-content: center;
+}
+
+ .right_collumn_background{            /*four different colours of background, therefore using collumns*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 35vh;
+    width: 30vw;
+}
+.background_color_blue{
+    background-color:#1E407A;
+}
+
+.background_color_green{
+    background-color:#51B2A2;
+}
+
+.background_color_pink{
+    background-color:#E990B9;
+}
+
+.background_color_red{
+    background-color:#F15B39;
+}
+
+.principles_heading{
+    color: white;
+    position: absolute;
+    font-size: 26;
+    font-family: "Nexa Light";
+}
+
+.principles_text{
+    color: white;
+    position: absolute;
+    text-align: center;
+    font-size: 16;
+    font-family: "Nexa Light";
+    margin-top: 8vh;                                /*the texts overlaped and since this file is only emergency backup, this solution is suficient, in case of deploying it, the aligment should be fixed*/
+    height: 30vh;
+    width: 28vw;
+}
