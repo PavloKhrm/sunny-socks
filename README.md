@@ -1,6 +1,6 @@
 # Group G
 
-Welcome to the Bright Group G's repository! 
+Welcome to the Group G's repository! 
 
 ## Trailer
 
